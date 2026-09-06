@@ -1,0 +1,458 @@
+Okay. Screen is shared. Good. So for today's lecture, we're going to look at modern weather
+and climate models. In the email I sent you yesterday, there were these three links. Did
+any of you have a chance to watch them? No. Okay. So in revising for your class quiz on Monday,
+the class quiz will happen in this Monday lecture slot, 8.30 to 9.30, and then we'll carry on with
+practical. Yeah. Revise these. They're quite nice videos. They'll explain a lot of what we've covered
+in the lectures, but with nice graphics and someone explaining very clearly. And there is
+a longer list of things. So this is what I've just been explaining on the board using the
+stickman examples. Yes. These ones? No, they're like five minutes long. They would just be useful
+to help in your revision. So you don't, I'm not going to test you on what's in these videos. I'm
+going to test you on what the lecture was, but watching these videos might be helpful for just
+bringing more of it together so it makes a complete picture in your mind. That's all.
+Yeah. Okay. So as we said, filter for scale, get the chosen scalings. Much of the fundamental
+flow of the atmosphere is held within the Navier-Stokes equation, such as geostrophic balance or
+planetary wave, Rosby wave propagation. Now, that equation is a very nice way to write it out. We
+can write it out showing, you know, the derivatives more fully. And we have the Navier-Stokes
+equation. We spoke about the thermodynamics continuity equation. You can't create to
+destroy air, so divergence in the lower atmosphere must make air rise and converge higher.
+For example, sink converge higher up. And ideal gas law, moisture conservation. Okay.
+There's one aspect in here which we haven't covered. The only scaling that happens in these
+primitive equations is that rho density only depends on pressure. So that equation includes
+sound waves. When I'm talking to you, what's happening is sound waves are changing the density
+of the air just a little bit at a very high frequency and then they're coming and then it
+hits your eardrum. And it's just because the density of the air as the wave is traveling is
+oscillating a bit like this. Okay. We do not need sound waves when we're doing weather prediction.
+And so what we do is we say, no, the density is fixed. The only thing that changes the density
+of the air is how much air is above it. So this is about pressure. So if you have a parcel of air
+that's at the top of the atmosphere, there is not much air pushing down on it. Okay. But if you have
+a parcel of air near the bottom of the atmosphere, this air is pushing to the surface at a thousand
+hectopascals. Okay. So newton meters per second. Newtons per square meter. Okay. And that means
+that if you think of the air as being a box, the top of it is pushing up at the rest of the atmosphere
+at maybe 999.9. Okay. Because the air is squashing itself. So the air is more dense at the surface,
+it is less dense higher up. Okay. But that's the only thing that controls the density of the air,
+which means that we have ignored sound waves. Okay. This type of approximation is called a
+Boussinesq approximation. You may have seen it in the textbook if you looked, but other than that,
+the information's all there. Okay. Right. How are we going to solve this? You're mathematicians,
+some of you are computer scientists. What are we going to do? Anyway, what's the big word we're
+going to use? Well, not even a big word, small word. Discretization. Exactly. That's how we
+construct a numerical model. We're going to divide it into latitude, longitude, and level pixels,
+essentially, or boxes. Okay. Why is it a blank slide? It's animated. So we have Navier and we
+have Stokes, a Frenchman and a British person. Happens in mathematics often. After the time,
+they find that two people discover it at the same time and then they give it Navier-Stokes
+rather than just Navier's equation. Okay. So Newton's equation gives us how objects move,
+how planets orbit. Okay. Navier-Stokes is basically the Newtonian equation for fluids.
+Why and how fluids move change their speed. This man, Lewis Fry Richardson, he was a pacifist. He
+didn't want to go to war, but he ended up driving ambulances during the First World War.
+And during First World War, they needed weather forecasts. And he actually, in his spare time,
+started to do computations to try and, in the first instance, discretize the equations.
+And in 1922, he wrote a book in which he described this big theater in which you had the central
+person here, the central mathematician, telling little groups of mathematicians
+in all of these little boxes around here what computations to do. Okay. He was thinking about
+how you discretize the equations and then get the computation because what happens is you are now
+computing. If you think about this being it, you're wanting the wind speed on this line over here.
+Well, then you want to compute the pressure difference between these ones. Okay. And that
+pressure difference, well, let's see how warm it is compared to these different ones. And so,
+you have many people doing the computation, sending this information back to the central
+mathematician, and you can then make the forecast. That's exactly how it works in a computer.
+You have the central processor and then the equation is farmed out to a supercomputer
+in parallel. The parallel, the compute nodes can all talk to each other, so you can be passing
+information across and the central compute node is keeping track of everything that's going on.
+So, it was pretty good. 1922, they didn't even have any computers and he's like, well, this is
+how you need to compute it. Obviously, he was British. And so, the new Met Office, so in the
+UK, there's the Met Office, Metrological Office, their new compute, their new model they're
+producing is called Al Frick in recognition of his work. It turns out, Al Frick, they are working
+very hard to make it quick, but they're having a lot of problems with the numerics of that model.
+And so, we discretize the equation. That is how it looks. And you now have a whole set of
+pixels and you can solve. The problem with this type of grid, which is a lat long grid,
+which is the first one they used, is as you get to the top of the earth,
+your latitude and longitude boxes get smaller and smaller and smaller. So, over here,
+you might be solving for 200 boxes over the whole circumference of earth. And over here,
+you still are solving for 200 boxes, but over just the Arctic or similarly the Antarctic.
+And so, in the last 20 years or so, they have started to use different types of grids. So,
+this is an example of triangles. There's a model called Icon. That is the German one.
+So, we saw that on Windy. I said there's Icon. And that's because that's an icosahedral grid.
+So, that's a slightly different shape. And then you can make an even
+tessellation of these tiles across its surface.
+So, maybe you've seen the next slides. Maybe you know what's coming next. What else do we
+discretize? This is discretizing only in space. So, that equation, as we said, it's a continuous
+equation. It's defined continuously, but we need to discretize in time. So, why does
+higher resolution matter? We'll come on to that, but you can go and read more about that
+over here, if you wish, and about why grids matter. There's another link to a paper here
+about different time integration strategies. Now, here is an example where you have
+small fast processes. And we'll come to this now. So, subgrid processes, which we are
+statistically solving. This works once you've seen some later slides, but it'll make sense.
+So, you have some processes in the atmosphere that are fast. So, for example, the development
+of a thunderstorm might be very quick, but you're not resolving it. You're doing a statistical
+or mathematical approximation for the thunderstorm, but you need to do that quickly. And so, you have
+lots of small time steps for the fast processes. But then those big waves in the atmosphere,
+they are moving more slowly. And so, then you might do a bigger time step for those processes.
+And so, you actually, even within the equations you're solving, you might have different speeds
+at which you are time stepping and computing things. Now, the time step, there's something
+called a Courant number. If you've done any CFD, you'll know about this. Has anyone heard of the
+Courant number before? Courant. And that just tells you that if you have a very big grid,
+and so wind is blowing at a certain speed, you could have a long time step. So, climate models
+that have a big grid that might be 100 by 100 kilometers, their time step could be 60 minutes.
+But if you come to a model which has kilometer by kilometer pixels, then the wind blowing
+can change what's happening at those pixels quite quickly, and then your time step might
+need to be 30 seconds. Every time step and every grid point adds up to the number of computations
+that need to happen. So, if you only have boxes like this, you've divided Europe into very few
+boxes. This is now what the mountains would look like in your model. This is only four Europe,
+one, two, three, four, five, six, seven,
+13 times seven,
+91. So, there's 91 computations that will need to happen at every time step over Europe, okay?
+And these are grid boxes, so you maybe only need to do that computation every 60 minutes.
+So, if that's 91 times 60, I'm not going to do that very well in my head.
+Let's say it's a thousand-ish, okay? Maybe a thousand computations are required
+for you to do an hour integration of the equation because you just computed. That means if you're
+doing it over a day, you only need 24,000 computations, okay? So, the number of
+computations that you need to move your model forward is both the time step and the grid spacing,
+okay? So, we said 24,000 needed to run one day if it's at this space or resolution, okay?
+Now, you want to do a weather forecast, okay? You are going to need to run that for 10 days,
+so now 240,000, okay? But a weather forecast is only useful if you finish it today. Like your
+forecast, you're running it now. You need to finish it in the next three hours so that you can give it
+to all the forecasters who can then put it on the web, on the phone apps and issue warnings if
+there's a storm coming or something. And if you're wanting to do a climate forecast projection,
+you want to do another 100 years, you can imagine that now we are looking at
+millions of computations that need to happen, okay? And then the bigger your computer is,
+the more computations a second you can do. We call it, you know, the measurement is in flops. So,
+I can't remember how many flops we are at now with the biggest supercomputers,
+but when we were first doing this, we did not have big supercomputers. And so, we made the
+best we could do. We said, right, we can accept that for the future climate change simulation,
+we need it to finish 100 years in three months. That's okay, okay? But as we wanted to get more
+accurate, we have to improve things and we need the bigger computers.
+Everyone with me still? Cool. So, it's quite simple. You can see that this is a very bad
+representation of what the mountains look like. So, this is now going across along 47
+north, so over here, through the Alps and it's showing you what in the model world the mountains
+look like, okay? Now, in the real world, I don't have to draw it, but just to illustrate the point,
+the mountains are going to have far more detail.
+And if you live in this valley, there's no useful information because it's going to tell you,
+oh, you're this high up. The higher up you go, the cooler it is. You'll never get the hot
+temperatures that happen at the bottom of that valley, okay? And so, of course, as we went through
+time, we improved resolution. And so, early on, boxes were big boxes like this and, you know,
+in the very first models, you don't even have any layers of the atmosphere. And then you add more
+and more layers, your boxes get smaller and smaller. And then as you do that, you can see
+that, for example, in this case, Europe, the representation of the hills gets better and better
+as you move to smaller and smaller pixels in the spatial sense, okay? So, these are assessment
+reports. This is the information that goes into the IPCC climate change reports, which then
+governments negotiate on about reducing carbon emissions. So, I can't remember what, and this is
+the first assessment report, yeah, second assessment report, third assessment report,
+and now we're on to assessment report four. So, this was completed in 2014, 2015 or so. So,
+no, this would have competed early 2000s. We then went to AR5 and AR6, assessment report six,
+and we are now on assessment report seven. So, they are now running models which are even higher,
+but we're getting to very big storage considerations. This is just another example of it.
+With this sort of model, if you, next time you fly back home, next time you're in an airplane,
+look out the window and look at the clouds as you're going either taking off or coming down.
+Hopefully, it's a cloudy place. You can see that there are sometimes very, very thin layers of
+clouds, okay? And to represent that distribution of clouds through the atmosphere is very poor
+if you are using those. So, you really want these higher resolutions, okay? So, that is about where
+we act with most of these models today. That box, even if it comes down to nine kilometers,
+is missing things. So, what you have here is a log scale of both the horizontal length scale of
+processes in the atmosphere and the time scale of processes in the atmosphere, okay? And so,
+when we think about thunderstorms,
+afternoon rainfall that many of us have experienced with big thunderstorms, this is happening at these
+sorts of length scales. So, we're on about 10 kilometers or a bit more. Time scales 10 to the
+4, so divide that by 60 to get into minutes. If we go to El Nino, El Nino is at a much longer
+time scale, okay? Now, we said that we have to truncate in space and in time, okay? So, let's say
+that our truncation is in time over here, okay? So, we can't then have turbulence represented
+in our flow. Now, turbulence is going to be very important for mixing things in the atmosphere.
+It's going to be important for creating drag as well. So, you have laminar flow, which is smooth
+and things go quickly, and you have turbulent flow. Most of the atmospheric flow is turbulence.
+That means that this is not represented by the model grid. We then say, well, what's the spatial
+scale? Well, I've shown you from the previous one, it might be 100 kilometers. That means
+a whole lot of processes related to the development of thunderstorms are not represented, okay?
+The equations can represent them, but what we are doing by having to
+discretize the equations to solve them is we are truncating the processes that we can solve, okay?
+So, primitive equations are always truncated. They're especially truncated in space,
+but in time as well. So, what are we going to do about that?
+Does anyone have past experience with what we do? Anyone want to suggest what we're going to do?
+Okay, yeah. So, what we do is we call these processes sub-grid. So, they are below time.
+They are below the grid scale. They are happening inside a grid box. We can't resolve them,
+and that's where we have to do parameterizations. So, a parameterization in its simplest form
+is at the grid. Let's actually draw it on the board quickly. That would be helpful.
+Let's think about the fact that water can come from plants, okay? So, we need a way to estimate
+how much moisture is coming from the plants, okay? So, part of the moisture in the atmosphere,
+the change of moisture, we normally call moisture Q, change of moisture is somehow related
+to what we call evapotranspiration, okay? But we do not have in our model a representation of the
+leaf. What happens with this leaf is it's got very tiny holes underneath the leaf called stomata,
+and these holes open, and they let the carbon dioxide in in order for the chemistry,
+photochemistry of a leaf to happen, and they let water out. So, water evaporates out.
+So, what a parameterization does is, okay, we need ET, right. Well, this ET is going to be
+in some way related to, and so we will make some sort of equation which talks about, well,
+we do know what the temperature of that grid box is, okay. So, what is the temperature?
+I'm just going to do this as like terms, I have to make the relationship. It's going to be related
+to how much moisture there is. So, if the air is very dry, the evaporation will be greater.
+So, what is the moisture, okay? Also, if it's very windy, the winds can increase evaporation. It's
+the same thing as if you put your clothes out on a windy day, it will get the wind dry more quickly.
+And so, we have wind, so U and V. Temperature, moisture, U and V
+are all things that we know about for each of these grid boxes. That grid box,
+we will know temperature, moisture, U and V.
+And all that our parameterization does is it builds this relationship, okay, so that we have a way
+of computing the change of moisture in that lower part of the atmosphere that's seeing the leaves,
+okay. And that's what a parameterization is. Often, these are derived empirically,
+so people take a lot of observations in the field and they just in this way try and derive
+the equation. And when it comes to something like turbulence, so we're thinking about,
+right, the grid box is like this. Inside, there are mountains and trees,
+and even a bad Christmas tree, okay. And we only know about U and V at this scale,
+but we need to know what the drag is that is slowing the wind down because of the way in which
+turbulence is operating, okay. In this case, they will do a whole set of five-minute-long
+calculations, okay. In this case, they will do a whole set of boundary layer mathematics
+to determine how the large-scale wind speed and the surface roughness interact to create
+turbulence, okay. The end result is that out of this parameterization comes a drag number,
+and that might just be a factor, so it might be, you know, simply 0.9, and that then is applied,
+this is now times by 0.9, it's applied to the grid-scale winds to slow them down, okay.
+A lot of different things need to be parameterized,
+and the other thing is that we're not including the processes.
+The processes can inform how we compute these parameterizations, but ultimately all that we
+want is the effect of everything that happens inside the grid on the grid-resolved properties,
+okay. That is what a parameterization does. Now, there are many things that need to be parameterized,
+vegetation, albedo, this is how much radiation will bounce off plants, rainfall.
+Rainfall is happening, as we described the other day, because H2O molecules
+are condensing onto little bits of dust, they form a water droplet,
+that water droplet stays in the air because there is some rising air,
+but at some point it becomes too heavy for that rising air to keep it up and it will fall out of
+the sky. That is happening at the scales of millimeters, and that is the amount of radiation
+happening at the scales of millimeters, and our grid box is 100 kilometers, so it needs to be
+parameterized, okay. Whether there's going to be a thunderstorm or not also needs to be parameterized,
+and a whole lot of aspects around cloud which comes into this need to be parameterized,
+and this is where a lot of the uncertainty in both climate modeling and where the prediction
+comes from, and a lot of the work happens, and it's here where machine learning was first thought
+to be the most powerful way to solve it, because even though some of the cleverest people in the
+field were trying to say how do we do convection, I'll show you an example of how it's estimated in
+a bit, they still end up with convection that's wrong. If you look at a climate model, I'll show
+you why it's wrong in a bit, we have a video, and you then say well we actually also need to have
+an ocean, if you want to do climate simulations it's not enough to have an atmosphere. At the
+moment Neural GCM, Gencast, the models you will hear about in week three and week two, these are
+only atmospheric models, they do not yet have an ocean, but for climate models you need an ocean,
+same set of processes apply about parameterizing what happens in the ocean,
+parameterizing everything in the grid box, and this is an example of you know the effect of the
+parameterizations on the resolved grid. So as computers started to advance, we first were making
+models that were just at the atmosphere, they might have some sort of land surface, they may
+have a representation of plants, and they had ocean, and this has all been mathematicians
+who know about geophysical fluids writing these equations, and then computer science helping
+solve those equations quickly, and that means that even now a lot of the code is still in Fortran,
+because they started to write this code in Fortran, the Fortran libraries became so optimized
+that it just made sense to keep using Fortran, because it is so much quicker than modern languages
+once you have done all of this optimization, and I guess it comes to what you're doing with the
+matrix and tensor factorization and optimization course you're doing, is how do you do that quickly?
+Okay, the Fortran libraries that do all of the mathematics solving these equations are very very
+fast. We then started to have ocean models and atmospheric models coupled together around the
+1980s, we also included sea ice because that matters a lot for the arctic areas, the poles,
+and then we could have got to include more information around carbon, vegetation, aerosols,
+more about ice sheets, upper atmosphere, so representing the ozone, you know representing
+ozone in these models, they couldn't do it earlier because at the top of the atmosphere they maybe
+had like only two layers, so yeah at the bottom of the atmosphere you have like 20 layers in the first
+kilometer, and then at the top of the atmosphere you have like three layers, because you're interested
+in what happens lower down, and we now have very complicated models which have many different
+components, and so we are trying to model the earth system, we are trying to model how climate
+is interacting with production of plants in the ocean and the rainforests on land, okay,
+and that's because of all of this detail. Okay, let's all stand up and have a quick stretch,
+because we're going to do convection, and convection is the atmosphere standing up
+and mixing.
+Okay, so we put a 100 by 100 kilometer grid box across here.
+Okay, you can always sit down if you'd like to now.
+Everything that's happening inside this box, all of these thunderstorms are being parameterized,
+okay, and you would think that they could do some very neat beautiful mathematics
+to make that parameterization, but no, instead they do choose your own adventure,
+and this is not for lack of trying, these are you know people as smart as you are,
+maybe some of them smarter, very good mathematicians, I mean maybe they'll be
+starting anew, I don't know, maybe you could solve this. So the first thing is we calculate
+the buoyancy, so remember I was speaking about buoyancy, it's how much warmer is that parcel of
+air compared to the surrounds, is it going to rise, is that parcel of air like a hot air balloon or
+not, and so they calculate the surface buoyancy, it's the tendency of this air to rise, and they
+say well this buoyancy flux, how much extra buoyancy is being added to the air by the
+evaporation, by the sun heating, so as the sun is heating things up it is increasing temperature,
+which we are representing here as the symbol theta, theta is normally potential temperature,
+okay we won't go into the detail, but it's basically saying okay how much is this changing,
+how much is this going up, okay we know what the buoyancy flux is, is the buoyancy flux bigger than
+zero, that means that is this air buoyant, ah yes it is, okay so if it says no, well no we're not
+going to do any sort of convection, but the air is buoyant, very good, well let's launch this parcel
+up and see what happens, and estimate the lifting condensation level, so this is where you take the
+air and it rises up, condensation happens and it turns into a cloud, so this is where you have the
+cloud base, okay so they find what is the lifting condensation level, then we estimate something
+called the level of neutral buoyancy, so if that air isn't very buoyant it's going to rise a little
+bit and then stop, it's when it's neutrally buoyant, so imagine a hot air balloon, they're going to take
+you on hot air balloon rides over the Serengeti, I don't know if you've seen those videos,
+and they put only half a cylinder of gas in and they start heating that hot air balloon up,
+it can't get very high, okay, if that level of neutral buoyancy is actually very high,
+so that parcel is very, it's got a lot of energy, it's very buoyant, then they say well is it bigger
+than this value, so is the neutral buoyancy 400 meters higher than where it forms a cloud,
+ah okay good, is it actually even higher than three kilometers, okay yes that's good, okay
+is that temperature at that level less than zero, that means have you got high enough that you're
+actually in the freezing levels of the atmosphere, oh it is, okay well then let's make the deep
+convection parameterization come on, this will come on, it will take these warm parcels in that
+grid, it will move them up in the atmosphere, as they move up it will create precipitation,
+it will do the latent heating, it will change the whole profile of temperature within this column,
+as the convection happens it'll say okay well this was how the temperatures existed in that column,
+we've called the convection scheme, that convection scheme is going to cool the surface
+because it's taking warm air up and it's going to warm up the higher atmosphere as the energy
+from the surface is moved higher up, okay and so once that convection scheme is called you've
+changed the whole vertical profile of temperature but you're doing that when there's so much detail
+happening, okay and it turns out that those models have just not done a good job, now unfortunately
+so if you watch this animation if you do it through Google Drive it should be slower,
+for some reason if you do a PowerPoint on a Mac it makes these animations far too quick
+but over here you have a typical model, now this one actually even has good boxes that are smaller
+they are 25 by 39 kilometers so they are very small boxes but this one has boxes that are four
+by basically five by five kilometers, okay so there is a box that goes from here to
+Prishok, okay rather than in this case a box that is covering from here all the way to Cape Point,
+okay and in this one you can actually turn off this whole convection scheme
+and you can allow the Navy of Stokes to make the convection itself.
+So we have been doing a lot of work analyzing how when you do this for Africa you can improve
+simulations and this is actually work within my research group that we've been doing
+so we're actually running this model so that is a model simulation of the atmosphere the grid box
+in this case is two kilometers by two kilometers and that is what I was showing you before was a
+satellite animation, this is now a model so you know at first order it's very impressive
+that we can have created a computer model that really looks like the satellite animation,
+okay I mean do you agree does that look like a satellite animation to you?
+Yeah so we're using this to actually see if we have explicit convection like this
+so no parameterization scheme can we improve the simulation of how over the next three weeks so
+this is starting in October how over the next three weeks or three months the rainfall moves
+down into the rest of southern Africa okay that's what we are using this for.
+This is summarizing what I've already told you there's quite a nice video here
+we may as well have a look at it it's just really quite pretty
+so
+okay no
+irritating
+so
+everybody today I'm going to talk about if you take those equations
+and you do the opposite thing so you don't filter for the larger scales and you say I'm
+actually only going to focus on the small scales and I'm just going to model a single storm that
+produces a tornado it's the opposite to what we've been doing you can end up with simulations that
+look like this this is the process of tornado genesis we have a vortex merger that occurs
+and then we have two more vortex mergers that occur but we now we have 60 meter per second
+winds of the surface calling that tornado time with the red t that's flashed up
+this the vortex continues to strengthen and we have the third vortex merger right here that is
+very important it really starts the whole ef5 part of the simulation going now looking at storm
+relative horizontal winds and the volume rendering and ground relative winds at the surface now it's
+a tornado I'm just showing at the surface the tornado strength winds you can see the tornado
+doesn't really rage for right away it gets going at ef0 ef1 strength and then it's right about at
+this point right here where you start to see a really strong growth a very strong bottom up
+signature in the horizontal wind speed which is what we're showing in the volume rendered here
+volume rendering here so the bottom up portion is very strong in this but it's sort of after
+it's started becoming it so that's just a pretty video more than anything else
+to show what happens if you actually say right we're going to do a truncation that looks like
+this so there's still a truncation here but we've we can't represent anything about global
+climate in those simulations okay um still when they do that rendering of the vortex tubes it's
+it's incredible
+okay so when we are doing climate change
+as you just you've realized a climate model its main goal is to think about how
+earth's surface temperature and rainfall and other things will change as the composition
+of the atmosphere increases okay so when you build a climate model one of the processes
+well in all these models the key process that is being parameterized for a climate model
+is radiation so clouds change a lot of this but ultimately
+we are having parameterizations which ensure that we are solving for how the sunlight comes in
+and the radiation leaves and when you change the composition as we saw from Tuesday
+you change the amount of radiation that stays in the system before leaving and so you warm up
+its surface so it turns out that the fundamental physics of creating a climate model and the
+weather model are actually the same because those processes also matter for a weather prediction
+but a climate model we are wanting to predict much further into the future
+because we don't matter it doesn't matter what the actual weather is on a given day we're interested
+in how that weather variable might change if the planet is warmer and so this climate variable
+might be temperature for Cape Town and it can say well at the moment with the current
+carbon dioxide in the atmosphere or if there was no carbon dioxide we can look and see that
+the temperature range in Cape Town would be this but now in the actual world where we have carbon
+dioxide a lot we've emitted a lot more the temperature is now shifted and so in Cape Town
+when you have hot days these hot days end up being 35 degrees rather than if we didn't have
+all of this carbon dioxide they might have only been 30 degrees okay and it doesn't matter when
+the hot days occur the climate model is giving us the statistics so we are running these models
+at fairly big pixels so the resolutions course 100 by 100 kilometers and we are interested in how
+the statistics of the weather will change okay
+weather prediction is a different problem weather prediction they want to tell you
+very accurately what is the temperature going to be
+tomorrow what is the temperature going to be next week at four o'clock in the afternoon okay
+okay
+so weather prediction is about telling you exactly where in the climatic distribution of temperatures
+the temperature will be tomorrow or the next day it's also about saying in the climatic
+distribution are there being tropical cyclones is there going to be a tropical cyclone hitting
+madagascar next week or not okay and so weather prediction is trying to solve a different problem
+from the climate change okay climate change is about what is the distribution the statistics
+weather is saying actually what is going to happen what is the probability it's trying to
+estimate the probability of the certain weather happening okay so
+there is a little bit more in this lecture which i'm going to leave actually for
+the start of the lecture on tuesday okay it fits well for the start of the lecture on tuesday
+and we'll talk a bit about why you actually can't just run one weather prediction i mean you can
+but why you actually need a few weather you need an ensemble of predictions to estimate
+the probability but we will talk about that a bit more on monday
+it comes down to some chaos theory which we can talk about on monday
+okay and yeah this is the current forecast from yesterday afternoon for a tropical storm that
+might turn into a cyclone to indeed hit madagascar you can see there are multiple the probability is
+quite a wide distribution as to whether the storm will hit southern madagascar or go out into the
+ocean
+so there's two things i'd like to conclude on for today
+the first is this in the 1980s the three-day forecast had this type of accuracy
+okay so the 1980s the three-day forecast for whether it's raining over england or not
+was maybe an accuracy up here 80 that's not bad but the 10-day forecast was 20 okay
+and as we have gone through the decades through a lot of work on the parameterization schemes
+on how to better discretize the grid on how to more accurate do accurately do the time
+discretization and the time stepping to solve the equations from not hundreds but thousands of people
+working on these problems in weather forecast centers across the world mathematicians and
+computer scientists and atmospheric scientists who talk about processes we've been improving on
+average about one day every decade so if we look here the seven-day forecast in the 1980s
+had maybe a 50 accuracy and now in 2018 the 10-day forecast has that sort of accuracy
+okay so we've had one two three four decades in this case to get three days more accuracy
+right it's been slow going but it means that the hurricane forecasts with the hurricane sandy
+that hit new york eight days out there was actually a forecast saying that this might happen okay
+that's the first thing i wanted to say we're going to see how this curve looks
+with the new machine learning models next week yes
+uh yeah so uh monday of week three i think it's the monday yes it'll be in the new updated schedule
+because shruti and i had a good discussion yesterday she'll talk about skill scores there
+are many ways to measure skill i think in this case it's just how well it matches the pattern
+of the 500 millibar geopotential height okay but um it's it's it's it's it's it's it's it's it's
+um and also yeah you have northern hemisphere and southern hemisphere which is interesting you can
+see that now the northern hemisphere skill and southern hemisphere skill is about the same
+because they're very good at including satellite observations um whereas here they hadn't figured
+that out fully and so because there are so many observations in the northern hemisphere the northern
+hemisphere has better skill but no so false alarms are not in this particular accuracy
+um but false alarms are part of a whole set of skill scores that we actually use
+in in the field and shruti will talk a bit more about that and so this is quite a nice paper
+it's a bit old now 2015 to talk about this picture but by next week sunday it'll be good
+to have read this one because this one starts to talk about how machine learning can improve
+these things okay um
+the final thing i would like to say is that when we're thinking about prediction skill
+what this curve says is that as you move forward in time
+three days five days seven days ten days you get less and less accurate
+this is the same thing the ability to predict drops off to be quite low at week two
+we then have seasonal forecasting that's where your practical is almenio and some other things
+as well as you will be looking at iod s iod gives us an ability to actually say is there going to
+actually say is there going to be a drought or not so now this is seasonal forecasting
+and then finally we're going to climb projections we can argue about whether that's a fair skill but
+the confidence in time projections is it's going to get warmer
+there's things to say as well about particular seasons changing
+but there becomes some confidence as you just keep on putting more carbon outside into the
+atmosphere we can have confidence with what we say about how the earth will be warmer and what
+that might mean at the end of the century okay a lot of my own research is actually prediction
+research at this time scale we know we can do something at the seasonal but for example when
+are the rains going to start in a given year well we need the information here and it turns out it's
+very difficult to get that information here and so a lot of my work is um i'm an optimistic person
+by nature and i think that possibly with the new issue learning models possibly with some good
+statistics with some very careful thought we can move that green curve to be a little bit higher
+over here so that we can say three weeks away okay farmers in this area of zambia or south africa
+farmers near bloomfontein we think your rains are going to be good for you to start planting
+three weeks from now okay so that's where a lot of my work happens and that's why we're trying
+to use these new models that have the thunderstorms in them okay so this is a summary you can go and
+read this in your own time the main point is that both well we have to discretize these equations
+we discretize them in space and in time and we can end up doing a prediction we are not we haven't
+talking about ensemble prediction we will talk about that on tuesday and the other thing is that
+both weather and climate models while developed to focus on different problems
+they share the same fundamental primitive equations
+and they have never stokes on a rotating sphere and the thermodynamic equations
+but for climate models the thermodynamics are more important
+okay um
+what we've been talking a bit on and off about is this initial condition versus boundary
+so the key message from this week which is important is that the weather prediction problem
+is about your starting conditions and seeing how well you can carry forward
+if the if the whole planet has this pattern of pressure today
+what is it going to look like tomorrow what does that mean for wind and rainfall
+and the next two weeks it's the starting conditions that matter the initial conditions
+that's where you solve the equation forward for climate models it's the boundary conditions and
+everyone together remind me what's the main boundary condition that is changing for climate change
+carbon dioxide it's the atmospheric composition okay this is important because the machine
+learning with graph neural nets can do a pretty good job at making the initial condition problem
+and how expensive it is to run those models you know how many millions of computations have to
+happen each second on this very fine grid resolution machine learning can solve that
+and maybe do a really good job but for the boundary value problem machine learning has
+to be used in quite a different way okay a purely data driven approach is not going to work okay
+okay so happy to talk more about that but those are kind of the key important things to say
+so these slides will be uploaded you can go and have a read you're welcome to have a read of
+these slides watch of these animations as well but as I say we will talk more about
+our initial condition sensitivity next week
+before I close the slide deck today does anyone have any questions

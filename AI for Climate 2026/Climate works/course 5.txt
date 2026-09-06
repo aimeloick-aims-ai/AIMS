@@ -1,0 +1,546 @@
+Okay, good. So this is lecture two. What we did from last year is we've actually compressed
+yesterday's lecture, which was the introduction to the science, but also the observations
+into one lecture. So there's a bit more time for the other lectures, which talk a bit more
+about the fundamental of the physics. And so you have time to engage a bit more with
+the physics. And today's lecture, we're going to have a lecture, which we should be done by
+10 o'clock. No, sorry, by 930, if not before. And then we have a practical to get started.
+The start of the practical, we will talk about El Nino. Okay. Because that's what's going to
+be the practical that goes forward. And in terms of accessing course material, have you
+all been able to access the Google Drive? Okay. So that's important, because that's where we're
+going to put the lectures after they've happened. And also for the tutorials, we have a folder with
+them ready, and then we'll place them into that. So Eman, at some point, if you can put that,
+lecture slides and the Python notebook into that. And so we'll start with the Python notebook today.
+Still very simple, nothing too complicated, and we will get more interesting and more mathematical
+as things progress. Now, the goal of the lectures this week and the practical is to give you a good
+flavor for how different climate change is from weather prediction. Okay. And we are lining up some
+guest lectures about something that DeepMind has developed called Gencast, which is about a very
+good weather prediction system, which is purely machine learning driven. And you need to understand
+how that's different from the climate problem. We are very close to having confirmed a lecture with
+the developers of a model called Neural GCM, which is partly physics based and partly machine
+learning based. And it can do a bit more climate type things. And essentially, it's this.
+At the longest time scale, that's the whole planet is getting warm on average.
+You can think of it very simply as being it's about the balance of energy. So imagine that I'm
+holding in my hand here a big metal ball, it's floating. Okay. And we get a big heater,
+not a fan heater, but like a radiation heater. So one of those infrared ones with the red bars.
+And we are holding it here, and this is heating up the ball. Okay. And at some point, that ball
+will reach a temperature based on how much heat is coming in. And it will stay at that temperature,
+and it will start to release heat itself away. And if that ball is spinning, like the earth is,
+I will be able to stand with a hand over here. And even though I can't feel this heater,
+I can feel the heat coming off the metal ball. Okay. And climate change and the global temperature
+is essentially about that. It's about the amount of energy that comes in and the energy that goes
+out and how the atmosphere keeps that in balance. Okay. The practical is about
+how the atmosphere responds to the ocean. So if you make an ocean warmer, that's going to
+change the atmosphere above it. And then the atmosphere can change in ways that produce
+draughts or floods in different places. Okay. And this is, that process is seasonal forecasting.
+That's how we can actually, in advance of the 23, 24 El Nino, I spoke about
+over Southern Africa, there were predictions about that. The same thing in Kenya,
+there were predictions about floods in that same year. And then finally we come to weather
+forecasting. And weather forecasting is about predicting how a fluid evolves through time.
+So if you look up at the mountain and you see the clouds making waves over the mountain,
+that's fluid flow. And if you think about those animations we had of the satellites yesterday,
+with the clouds pulsing across the continent, that is fluid flow and that's weather prediction.
+Okay. Today's lecture is about this thing about Earth is a big ball in the solar system
+and there is sunlight coming in to warm it up. And it turns out that you can change how warm
+Earth gets based on changing the composition of the atmosphere. Okay. So I'm going to repeat all
+of that now. If that all made sense, then you can go to sleep. If you would like to know more,
+then there are some slides to come. And to say, so this is what I've said,
+it's about Earth's radiation budget. It's the energy coming in and out. Navier-Stokes equation,
+this is about the fluid flow. And how you create models based on these equations is what we come
+to on Friday. The aspect of a boundary value problem, you may understand it from the
+mathematics you've done. We'll come back to it later on. But it's to understand that it's not
+about your starting conditions of your system. It's about the background conditions of the system.
+We'll explain that now. But this is going to become important. So by the end of the week,
+you need to understand the difference between climate being a boundary value problem and
+weather prediction being an initial value problem. Okay.
+So there's a really nice course you can do called How to Build a Habitable Planet.
+And it turns out that Earth is at just the right distance from the sun that we can have water
+in both its gas phase, its ice phase, and its liquid phase. So if we went out
+much further away from the sun, the oceans would become covered in ice. If we were much closer to
+the sun, we wouldn't be able to have oceans. All of that water vapor would be evaporated
+into the atmosphere. Okay. And this means it's a Goldilocks planet, not too hot, not too cold.
+Yeah, this is what we're saying, all three phases. And so it's about how much energy
+the sun gives us and how far we are away from the sun in order to support that.
+Another aspect that's important to understand is that
+the sun is really hot, 6,000 Kelvin. So if you want that in degrees Celsius, you minus 273.
+So do that in your head. That is 5,000. I'm not doing that very quickly in my head today. 5,717.
+Is that? Anyway, did you have a different number? Yeah. Yeah. So 5,717 degrees Celsius.
+Oh, 27. Yes. 5,727 degrees Celsius. Okay. So it's very hot. And the thing about
+the electromagnetic spectrum, which we saw yesterday, which goes all the way from X-rays
+through to radio waves, is that the wavelength at which an object emits most of its energy
+depends on its temperature. So the sun is really hot.
+And Earth is actually quite cold, 288 Kelvin. So that means that on average across the Earth,
+the average Earth's surface temperature is only
+14, 15 degrees Celsius. Okay. And that means that Earth is still a warm body. It still emits
+energy, but at a much different wavelength. And that's what this curve shows. So the sun,
+because it is so hot, the wavelengths that it emits energy at in the electromagnetic spectrum
+are very short. They are visible lights. Okay. Any idea, then, where in astrophysics,
+X-rays, we sometimes see X-rays and we sometimes see gamma rays, which are the
+most high-energy waves. Where would they come from? Anybody? Anyone do some astrophysics at
+some point? Have you heard of supernova? Yeah. So supernova, when a sun explodes,
+a star explodes, it goes bang, it gets very, very hot. And so there's this pulse
+of gamma radiation or even, or X-ray radiation that gets emitted. Okay. Because it is so hot,
+that would be somewhere over here in terms of the actual wavelength. It'd be very tiny. It would
+actually be up here. So the sun, most of it comes in visible wavelengths, which essentially are
+short waves. So if you look at the sun, it's very, very short. It's very, very short. It's very,
+essentially are short waves. So if you looked at the wavelength of the electromagnetic wave,
+it's quite short. Earth's radiation, because it's a much cooler body, it emits it at around here,
+10 to 12. The units are micrometers in this particular one. Okay. And that means that when
+you build satellites, those geostationary satellites, their sensors are specifically
+designed to detect radiation in wavelengths around here. So the images we saw of the satellites
+yesterday, there are some which are looking at the reflected radiation, but the ones that are
+looking at the infrared radiation that we can see all through the day and the night, they have sensors
+which are often about here, 11 microns. Okay. So the key thing to take away is that the
+temperature of a body changes the wavelength of the radiation that gets emitted by that body.
+So the sun is emitting very short wavelengths and earth is emitting much longer wavelengths.
+Okay. So that's the very first important thing.
+That's the energy. So the energy emitted by the sun at one micron is over a thousand watts per
+meter squared. Okay. The total energy emitted by the sun is the integration under the curve.
+So the area under curve tells you what's the total amount of energy the sun emits. Okay.
+Yeah. So what is newtons per second? So it's energy per second. Yeah. No, energy is newtons
+per second. Yeah. And then per meter squared is so you just say it's over, you know, a unit meter
+squared. Okay. So you can see that then earth, you know, the thing is you see these axes are not
+linear. Okay. I mean, okay, this is, yeah, that axis is linear, but this one is not. So this is
+going up in a logarithmic scale. So earth is only emitting 10 watts per meter squared at these
+wavelengths. Okay. So you can add it all up to see how much energy earth emits relative to the sun.
+So we'll come back to that wavelength aspect.
+Okay. So if the sun is emitting energy in a sphere away from the sun, by the time it gets to earth,
+the energy that was emitted at the surface of the sun is now going to be spread out a lot more.
+So the energy in watts per meter squared that the sun emits is going to be far lower
+as you move further away. Okay. That's why we say it's the Goldilocks zone.
+Okay. So there's a certain amount that arrives at earth and this is called the solar constant.
+Okay. And it's about 1370 watts per meter squared, but it arrives at earth and earth
+is not flat. Earth is a sphere. And so the simplest model for climate is what happens
+if this solar flux, which is this amount of energy, 1370 watts per meter squared,
+is distributed across the whole of the planet. Okay. So does that formula look familiar to anyone?
+Exactly. Surface of a sphere. So what we have is that the, and then the final thing
+is that the energy that earth emits needs to be set the same as the energy that
+comes into the earth. Why does it have to be the same?
+Yeah. What would happen if earth did not emit the same amounts of radiation as it received?
+It'll get hotter and hotter and hotter. Okay. And so we have the amount of energy coming from the
+sun, which is the solar constant. Okay. And that needs to be balanced by, this is now the
+temperature of earth at which it's emitting. Okay. And by the surface area, and then there's
+all the physics that determines this Planck's constant. Okay. So Planck's constant is the
+relationship between the emission, the total emission of a body and its temperature. Okay.
+And we're not going to derive it now, but the point is that that energy is being emitted by
+the full surface of earth. Okay. And so the energy comes in on one side of earth,
+earth is spinning around, that energy gets distributed, and we end up with this balance.
+So it's not too different from thinking about balancing this on your finger. The amount of
+energy coming in has to be the amount of energy going out. So energy in, energy out. Otherwise,
+we're just going to get hotter and hotter. Has anybody heard of this term albedo?
+No. So albedo is the amount of energy that is emitted by the sun. Okay. And so
+albedo is the fact that actually some of this energy that arrives at earth's surface is not
+going to stay on earth's surface. It's going to bounce off. Now, part of that is you can think
+just about the reflection. If you shine something, you know, at an angle, a lot of it's going to
+bounce off. But part of it is that it's cold at the poles. So there's lots of ice. And so a whole
+lot of the energy that arrives is actually reflected by the ice caps away to space. And also there's
+really high ice clouds that we saw, those very white clouds yesterday. Those are also reflecting
+the energy away from earth's surface. And so albedo, which we typically have at about 30%,
+is the energy that's just lost to reflection. So it never actually reaches
+earth's surface to warm it up. So this means that this solar constant that comes in is normally
+scaled by 0.7. So there's 30% that's lost. Right. And so that's the simplest model of climate. You
+can write it down. You're saying there's energy coming from the atmosphere. There is
+from the sun. It's balanced by the energy that leaves earth. And this is set by the temperature
+of earth. Okay. So you can do this calculation. I'll leave you to do it in your own time.
+Unless somebody wants to do it very quickly. Anyone got a calculator and wants to
+quickly go for it? The radius of earth is what we know. We don't.
+Because now let's see, does this board, is this board going to let me do this?
+No. Do I paste this one?
+Ah, like that. Okay. Ah, okay. Cool. Thank you. Cool. There we go.
+Ah, okay. So it might be a smart board, but I'm not.
+Okay. Let's try. Okay. So if we look at this equation. Sorry? Oh, yeah. Okay.
+Okay. So these are going to cancel out as are these.
+So we're left with the solar constant, which we have over here. We have albedo, which is
+about 0.3. Planck's constant is this number over here.
+So if you solve for temperature, what are we getting? That would be T is equal to
+the fourth root of s naught times 0.7 over 4 sigma. Anyone done the calculation yet on their calculator?
+What number do we have?
+It's going to give us a number in Telvin.
+Okay. Well, whoever gets the number first, just shout out. I'm not doing that in my head.
+Yeah, I'll also note that's 10 to the minus eight.
+Okay.
+Okay. We have an answer that it's going to be 255 Kelvin. Okay. So let's turn that into
+degrees Celsius, because maybe we don't think in that. We end up with
+minus 18 degrees Celsius. Okay. What number did I tell you earlier?
+What's missing from this bottle of climate? Because this is not the surface temperature of Earth.
+This is the surface temperature of the whole system. So when Earth is radiating energy out
+from the top of its atmosphere, that would be about correct. But Earth is not just a sphere.
+It's a sphere covered in what? Gas. Yes, exactly. So the thing that's been missing. Okay, now we
+need to close this. The thing that we were missing was an atmosphere. Okay. And so when you think
+about the balance of climate from that simple model, it is about that. That is about the balance
+of energy coming into the top and going out of the top. Okay. But the atmosphere is what sets
+what Earth's surface temperature is, which is 15. So minus 18 is too cold. We need an atmosphere.
+And so what happens with this mathematics is that we extend that previous model of the climate,
+but we add an atmosphere that has a temperature. Okay. So if we think about this, what we've done
+is we said this was just the temperature of Earth. Okay. And now what we did is we're adding a layer
+around it to account for the gas. The atmosphere has its own temperature. So it can emit energy
+based on its temperature up and down. And then the ground has its own temperature. So now we have
+ground temperature. We have atmospheric temperature. Okay. If you would like to follow the
+mathematics, you can look at the slides yourself, make sense of this and see if you come out with
+the same value. There, you end up with the temperature of the ground being 13 degrees.
+So I said 15 degrees. So we're in a good place. Okay. And then the temperature of the atmosphere
+is minus 28 degrees Celsius. So that's the average temperature of a single layer atmosphere. Okay.
+And is it, does that make sense? Do we need one more explanation of that? Or are you happy to look
+at the video? So what we know is that if Earth is a stable climate, which isn't getting much hotter.
+I mean, you've seen that it's changed yesterday, but that change is like 0.1 degree.
+No, it's no, it's one degree or so. It's about one degree. It's a change in the ground temperature.
+But the whole system is not getting hotter. So it's in balance. It turns out that if you ignore
+the atmosphere, you end up with a ground temperature that was minus 18 degrees, too cold.
+You have to include the atmosphere. And when you have an atmosphere, you now have a system
+where you have both the ground temperature and the atmospheric temperature, which together
+requires a change in the temperature of the atmosphere. So you end up with a change in the
+temperature, where you have both the ground temperature and the atmospheric temperature,
+which together accounts for how much total energy would leave the atmosphere or leave the Earth
+system. So we have solar energy coming in. This is then, so that solar energy coming in is balanced
+by energy, which is F. So this is the flux of energy leaving the atmosphere,
+F A, plus the amount that is coming through the atmosphere from the surface.
+OK, so the total energy that can leave the atmosphere is made up of two parts. It's the
+energy that is leaving from the atmosphere directly. So because the atmosphere has temperature
+and the energy which leaves from the ground through the atmosphere. OK, and this here,
+TLW, is about how much energy can escape from the ground. OK, so some of the atmosphere,
+we will see, actually this energy from the ground warms up the atmosphere.
+OK. Sorry, the s-bars were sort of constant, yes. So yeah, yeah, exactly. So that's not changing.
+Yeah, so albedo was there, yeah. I should redo that slide to include these different terms.
+And then, yeah, so here you have, that's the balance. And then for the FG term,
+because we need this one over here. This is made up of two parts. So the balance of energy for the
+whole system at the top of the atmosphere is that line. Energy leaves both from the atmosphere
+radiating energy away and from the energy that has managed to escape through the atmosphere from
+the ground. The balance of energy at the ground now is the atmospheric energy that's coming back.
+So this FA and the amount of solar constant radiation that is transmitted through the
+atmosphere. So this is like an amount that tells you how much energy can come through the atmosphere
+to the surface. And that tells you the balance of energy at the surface.
+OK. I'm seeing some nodding heads and some blank faces. I'm going to go one more step and then we'll
+have a reconsideration. So when you, you can just do the algebra to eliminate the FA. And it ends
+up that this flux of energy at the ground is related to the transmission of energy. So how
+much energy can come from the sun? SW is short wave. OK, so these are short waves. Remember the
+energy of the sun is in very small waves. The energy of the atmosphere and cooler things are
+longer waves. OK. Here are those two values, an estimate of those two values. What does this
+tell you about the short wave radiation? If the amount of the sun lights that can reach the surface
+is 0.9 versus
+the amount of surface radiation, Fg, that can reach the atmosphere is only 0.2.
+It will be tricky to think this through, but I'll give you guys a chance. Does anyone want to
+volunteer an answer as to what does this tell you about the atmosphere and its ability to let energy
+go through it? Yes. Absolutely. Have you seen this before? You're just thinking.
+I've seen it before. Exactly. So to put that differently,
+solar radiation passes through the clear atmosphere. The atmosphere's composition of gases
+is such that most of the sunlight comes through the atmosphere and it only starts to heat up
+the surface. It doesn't heat the atmosphere. OK. Which is remarkable. I mean, it's 0.9.
+And that is why we can have a warm surface and get clouds. Because when you put a pot of water on
+the stove to boil it, where do you put the heat? At the bottom. And it gets hotter and hotter until
+it boils. Now we have a strange system where the sun's energy comes from the top,
+but the atmosphere doesn't see it. It warms the surface. The surface then gets warm enough
+to release long wave radiation and or infrared radiation. It's emitted from Earth's surface,
+but some of the infrared radiation is absorbed and readmitted by the greenhouse gases in the
+atmosphere, which then keeps the, this warms the surface more and it keeps the lower atmosphere
+warm. And so that's why the thunderstorms, where you live in a place where there's thunderstorms
+in the afternoon, it's because the sun is spending all of the morning heating the surface
+and evaporating water from the lakes and from the plants and from the oceans.
+And then enough moisture is put into the atmosphere that clouds develop later on.
+And it's because the sun warms the surface. And so in much the same way a pot boils
+from the bottom up, the atmosphere boils from the bottom up.
+And so the satellite images we saw yesterday of big thunderstorms, those big white clouds,
+it's the atmosphere boiling because the sun's heating it at the bottom.
+Okay. Yeah.
+So if the sun arrives like this,
+which is basically at the equator or within the tropical area,
+that 1,370 watts per meter squared, almost all of it hits the surface at a meter squared. Okay. So
+is a useful prop.
+Yeah, let's take my hand. So my hand is that size, it hits that whole area. But now let's go to England.
+The same hand comes in.
+And it's going to, it doesn't work with the hand, but it's going to get spread over a lot
+more surface area. So the same amount of energy is coming in. But by the time it has spread out
+across the surface area, because it's coming in like this, and then there, all of it hits the
+surface. But the further north or south you go, then that same thing is spreading out over much
+more area. Okay. And so the watt per meter squared of solar energy landing in the town of Reading,
+where I live in the UK at the moment, is much smaller than if I was living in Nairobi.
+Makes sense? Okay. So I've got a set of videos I'll send you,
+which the Met Office actually in the UK has made, which talks about that. It's differential heating.
+So it means that the tropics near the equator, so Africa, gets a lot more sunlight to heat it up
+than further north and south, because the energy that comes from the sun is spread out over a larger
+surface area. So we're at this point, we said greenhouse gases, and we know that basically
+we say the atmosphere is transparent to shortwave radiation. The radiation can come straight in.
+Those of you that know about the ozone hole, the ozone layer,
+ozone is a molecule which is O3. So it's three oxygen atoms together. It's quite an unstable
+molecule, and it's very reactive to the sun. And in the atmosphere, we actually have different layers.
+We won't talk about it too much. But ozone is in the stratosphere. It's above where the airplanes
+fly, above the weather. And it means that actually, if you go into the stratosphere,
+it gets warmer with height, because ozone gas, when the sun hits it, it does warm it up.
+So the only thing in the atmosphere that's not really transparent to
+the shortwave radiation is the ozone molecule. But most of the gas that is keeping us
+warmer at the surface here is greenhouse gases. How does that actually look? It looks like this.
+This is the radiation transmitted by the atmosphere. So this is sunlight. Most of it is
+coming in the visible part of the spectrum. Here's the UV radiation, which is bad for sunburn.
+And this is the total absorption and scattering. So there are particles, the gases absorb and
+scatter. But then also little dust particles can scatter. So if you live in a place like the Sahara,
+or even much of southern Africa, before the rains come, there's a lot of dust in the air,
+or smoke in the air, and that will scatter energy as well. But the absorption is the way that ozone
+absorbs energy and re-emits it, or four other things. And here you can see what we've seen,
+is that the atmosphere, the percentage of radiation which is being absorbed or scattered by the
+atmosphere in the sunlight part is very little. So gray means big absorption, less absorption.
+So this part here, this worst UV, this total absorption scattering of 100 percent, that's what
+ozone does. So if not for ozone, UV radiation would be coming into Earth all the time. It would have
+destroyed all of the cells of plants, animals, and us. But we have this ozone, which means that this
+most damaging part of radiation for biological systems has been removed from the atmosphere
+before it gets to the surface. There is a little bit left. We then made an ozone hole, so we're
+getting more of this UV than we should. And finally, you see that all of this is clear.
+So all of that solar energy can come in, which is what, you know, we had said.
+But now let's move to the area where Earth is emitting radiation. So Earth is emitting radiation
+in this area here. And
+possibly this is an important part, is that this red, so the red curve at the top, the line is
+telling you the spectrum of the radiation, okay, and then the shading is telling you how much of
+it is being transmitted by the atmosphere. Okay, so when we come to Earth, you can see that this blue
+line is showing, I think these are for different latitudes of the atmosphere, so the different
+surface temperature. In the Arctic, it's going to be cooler, and at the equator, it's going to be
+warmer. But that blue line is showing you the total amount of energy that is Fg, the ground is
+emitting out, the distribution of it across different wavelengths. But then this shading
+is telling you the part of the spectrum which is actually being transmitted to space. So the point two,
+what we are seeing here, is that there's point nine and there's point two, okay.
+This point two that does come out the top
+is only coming from this part here. So this is what we call a transmission window.
+It's a part of the atmosphere where the energy just leaves the atmosphere, okay.
+But this part and this part is very much absorbed or scattered, okay.
+And now, final point, well, what's doing all of that absorption and scattering?
+These are the main gases doing it. And so you can see water vapor, so water in its gas
+is the biggest control. So the fact that Earth has, is of a temperature that we can see,
+is of a temperature that we can have water in the oceans, water vapor in the atmosphere,
+and then a little bit of ice in other places, means that the atmosphere can capture a lot
+of that radiation and re-radiate it back to the ground. And so the temperature of the surface
+is much warmer than it would be, okay. And then we come to carbon dioxide. So carbon dioxide is
+not as strong as water vapor as you can see, but there is a big chunk of this emission,
+which carbon dioxide blocks. The astounding thing here is that the carbon dioxide concentration
+is very tiny. So the atmosphere that we live in is, does anyone know this, what the percentages are?
+So it's something like 70 percent nitrogen, 78 percent nitrogen, and then depending on how
+what your altitude is, but something like 20 percent oxygen, okay. And then like 1 percent
+carbon dioxide, or even less, it's a very small amount, okay. 0.03, so you're looking it up as
+we go, or you know it, you know it's good. 0.03, okay. So it's a tiny amount of carbon dioxide
+that's doing this amount of absorption and scattering, okay. And then we can go oxygen
+and ozone. So this is what I was saying, ozone is the thing that keeps the UV part of the spectrum
+away from us, and you know some other things, methane as well. So if you wanted to
+change the amount of radiation that can be emitted by the atmosphere,
+what's going to be the easiest thing to do?
+Okay, is that easy to do? How do we do that? Yeah, emit more carbon dioxide. Yeah,
+how do we emit more carbon dioxide? We burn oil, we burn coal. We can do that.
+It's easy to do, and that's what we've been doing. So this is the part we've been adding to, okay.
+Now there are a number of more slides, and we don't need to go through all of them,
+because I think this is the key thing I wanted to to show you, is that it all comes down to
+how much greenhouse gases there are, particularly carbon dioxide. If you want to know what the
+uncertainty is, there's the water vapor feedback. So water vapor is the strongest greenhouse gas,
+and if we put more carbon dioxide so the whole atmosphere warms up by one degree,
+how much more water vapor is there now in the atmosphere, and how much does that change this?
+Okay, and that's where a lot of the uncertainty in being able to say the future comes from.
+I'll show you one picture about that. Yes. So basically, these gases, they are responsible
+for the air, retaining most of the heat, instead of emitting them back to the surface.
+Yeah. Okay, so that's why we have a comfortable planet to live on,
+and there's also now why we have a problem. Well, we didn't always have this problem, so
+it wasn't always thought of in this way. So here are a bunch of people that came to understand it.
+So there's a woman who did some experiments, they were sort of scientific, and they were interesting
+in the United States, Eunice Foote in 1856. But as John Tyndall, he was a working-class man,
+grew up in a poor part of London, started working as a technician in the Royal Institute's basement,
+and ended up becoming an excellent scientist. And he showed that curve I've just shown you before
+about which gases absorb where, he was the one that really started to do very good experiments
+to show us this. Once we had that, a Swedish person called Svante Arenas was actually the
+first one to calculate the extent to which greenhouse gases might increase as surface
+temperatures. So what Arenas did is he took this model, he made rather than one layer,
+he made many more layers. Because the atmosphere actually changes as you go up. So most of the
+water vapour is within the first three kilometres above the surface, and if you go up to 10 kilometres
+above the surface, there's very little water vapour. And so if you want to do a better calculation,
+you make many more layers. And then you say, well, okay, how much goes through the next layer and
+comes back down, energy comes back down. And you just essentially are computing the radiation balance
+for the ground and each individual layer above it. Maybe you do 10 layers, you do this calculation
+to find out the distribution of temperature in the atmosphere,
+turns out the atmosphere is warmer at the bottom and cooler at the top,
+and to find out the temperature of the ground.
+But, and then it comes on to this man. This man actually was a, oh, I'm getting confused now.
+No, he was an engineer, he wasn't a post office worker, but he would come home and he would just
+do the calculation himself in 1938. And he was the one that estimated how the emission of carbon
+dioxide will change Earth's temperature, okay, building on Svante Arenas' work.
+The interesting thing about Svante Arenas is that around this period, so from about 1850
+onwards, they were starting to understand, the geologists were starting to understand
+that at some point in the past, Europe had been covered in this massive sheet of ice.
+There were these very big boulders in forests in France. There were no mountains around.
+And the only way that you could explain for these very big boulders to be there
+was that there had been a massive sheet of ice. And the only way that you could explain
+for these boulders to be there was that there had been a big ice sheet carrying these boulders.
+And so, you know, you and me, if we lived in 1880, we would be reading books about the ice age
+that covered Europe. I mean, maybe we wouldn't because you're in Africa, it didn't. But you
+read the books about the ice age that covered Europe and everyone's scared. Are we going to
+have another ice age? Oh, no. The Industrial Revolution started. We know that we're burning
+fossil fuels, coal, it's making carbon dioxide. And Svante Venis computes this. And he says,
+ah, us burning the fossil fuels, it's going to prevent another ice age. So at that time,
+it was a good thing. We're not going to have the ice age. We are saving ourselves from an ice age
+because we are increasing carbon dioxide concentration. It's different now,
+a hundred and thirty years later. Guy Callender was the one that said, well, how much is that
+going to change? And this is global temperature change. Yes. So we need to have a balance.
+Otherwise, things are just going to get hotter and hotter. It can take a while for Earth to get
+the balance. So if you change the composition, maybe think about it mathematically. What we're
+doing is we're changing this point two to be something like 0.2001 and then 0.2002. Eventually
+0.201. So we're decreasing this value. This is going to like 0.019. And so the whole system has
+to change. But ultimately, you still need the balance of energy coming out and in. So this
+balance will be maintained. But you are changing this number in the equation, which means that you
+end up changing. You can do the math if you wanted to. Go ahead and solve this equation,
+but put 0.015 in this equation. Maybe that's if you wanted to do that as homework. Put 015 in
+this equation and see what temperature comes out for the ground. So we're changing the way that
+energy is maintained and re-emitted in a way that increases Earth's surface temperature.
+OK. The balance at the top of the atmosphere is basically still going to be maintained.
+It has to. And this is what Guy Callender did. So Callender wrote a paper in 1938 and he updated
+it in 1961. And these are curves from his paper. The blue curve, no, the red curve,
+and then the blue curve. OK. And this is also, you know, you get volcanoes. Volcanoes can change
+the amount of energy that comes down because you put up a lot of volcanic ash, the sun gets
+reflected more and such. But these are Guy Callender's curves. Here in black. And remember,
+he made that curve. Yeah, that here and that here. And this is actually now the best modern
+recording of how temperature changed. So he made the prediction of these temperature changes
+based on the emission of greenhouse gases. And this is what our observed record does.
+So what he did without a computer, just by doing calculations on a page,
+was an incredibly accurate representation of what we've actually observed over that period.
+OK. So there's a number of other slides about the distribution of radiation climate models.
+Perhaps. Perhaps the most important one is the first set of models that came out of Princeton.
+So Geophysical Dynamics Laboratory in Princeton. So this is the place where George Philander,
+we spoke about yesterday. This is where he went into this PhD. It was a good place to go and do
+that because they were running climate models at the time. So they built the first climate models.
+They were very crude, big mathematical boxes which represented all of Earth's surface
+and all of this radiation through the different layers of the atmosphere.
+And they ran experiments where they could run the model with the concentration of carbon dioxide we
+had observed in whatever year it was that this experiment ran. Oh, I have it here. Yeah,
+so mid 1970s and into 1980s they were running these. And then they take that model and they
+simply double the carbon dioxide to see what happens to the temperature. Or they quadruple
+the carbon dioxide concentration to see what happens. And this is where experiments,
+why you need models, is because you can run experiments. We can't really do this with our
+world because it takes too long to find out. And when you, yeah, okay, I don't have time to go
+into this, but you can go and look up the North Atlantic Thermohaline Circulation Intensity.
+It's about how much warm water moves across the whole Atlantic Ocean up towards Greenland.
+Okay. And essentially that movement of warm water up keeps Europe warm.
+And if you double CO2, the warm water moving up decreases. And if you quadruple it,
+it just stops going up anymore. Okay. But this is the way these experiments run.
+There were a couple more that followed. So Ben Santer is still doing science.
+And this was it. And then there was TETS as well. And what they do is they run an experiment,
+in this case, where they just put the carbon dioxide concentration in for 1986 to 1995.
+Okay. They say, right, we'll put that carbon dioxide in. Then they run another experiment
+for the previous period, 1961 to 1980. Okay. So they're looking at the difference between
+an atmosphere where you put 1960s carbon dioxide in and an atmosphere where you put
+1980s carbon dioxide in. And then they plot the difference. Okay.
+And this is what emerges. So that's the observations. This is possible because of
+all the radiosons, the weather balloons that were being released. They can see how
+temperatures distributed through the atmosphere. Okay. And the model experiments
+show that if you just have greenhouse gases, that is the warming that would be observed.
+If you have greenhouse gases and sulfates, so sulfates are the aerosol particles that
+are most common. They're emitted by things like volcanoes. They also are emitted by
+dirty coal from power stations. And you can see that there's a slightly different pattern.
+And then if you include ozone, because this is the time when the ozone loss was happening,
+you end up getting an even colder stratosphere. Remember, ozone keeps the high atmosphere warm
+because of its interaction with sunlight. And so that ends up being a model where the change
+between the previous decade and the current decade is actually somewhat similar to the
+observations. And it's a very important result to show us that while global warming might warm
+the surface of Earth, as we have shown you yesterday, this is the warming at the surface.
+You can see maybe it's half a degree. Yeah, maybe it's up to half a degree or so.
+There's actually a lot more warming higher up in the atmosphere. Okay. And so this relates to
+what I was answering to your question earlier. Okay. So we have models that can do these sorts
+of experiments. You are welcome to go and look at these slides, which will become available.
+This is actually a more complicated one that shows you, again, in watts per meter squared,
+how the energy is being moved through the whole system. So it gets far more complicated
+because we have to think about clouds reflecting energy. We have to think about
+stuff being reflected by clouds, being reflected by the surface. And if you were to add up,
+so that number, outgoing longwave radiation and reflected solar radiation, those two numbers,
+107 and 235, add up to 342. Okay. 342, so remember we said the solar constant is 1307.
+But that's if Earth was a flat disk. But because Earth is a sphere, if you were to compute the
+ratio of a flat disk to a half sphere surface area, I think you end up with 342. So that's
+what happens if you spread out 1370 watts per meter squared over, rather than a flat sphere,
+you spread it in a surface, you spread it out of a sphere. Okay. So that's like average of everything.
+So there's a lot more going on. This tells you about how models have advanced through
+time. And we will come back to that on Friday. Yes.
+To me, it shows that there's a kind of evolution of energy. And then since we have that E equals
+MC squared, and we know that the lowest form, like every mass or every object's limit of light or
+something like that. Is it not like some of these, maybe some of this energy can be lost
+in some light or something like that? No, not in this context. So the physics
+that we need to describe the atmosphere is essentially classical physics.
+And classical means before Einstein, loosely speaking. So Einstein gave us special relativity,
+general relativity, and ultimately E equals MC squared, which showed that at the scale of
+the atomic nucleus, you can get a conversion from mass to energy. Okay. To make an atomic bomb,
+it works because E equals MC squared. So you can turn mass into energy in very high energy
+compressed situations. But the physics that we're dealing with here is very far away from that.
+Okay. And so these physics flows, and this is essentially the thermodynamics that came
+out of classical physics, and also was developed because of the Industrial Revolution. So a lot of
+this fundamental thermodynamics was developed because they were trying to have the physics,
+which could more precisely solve for energy within steam engines and steam systems.
+So these sorts of thermodynamics come out of a branch of classical physics called
+statistical mechanics. So it's about the statistics of molecules and their energy
+and the transfer of that. Okay. So it's not to say that E equals MC squared.
+That is true, but in this context, we don't need to work with it. It's the same for the equations
+of motion that we'll just start looking at tomorrow. We don't need to think about special
+relativity because the speeds that we're dealing with are so far away from the speed of light.
+And so we can just use Newtonians equations of motion. So yeah, basically classical physics
+comes from Newton and thermodynamics and such. And then Einstein comes with relativity, and then we
+end up with what followed next with relativity and ultimately quantum theory and such.
+So I have one more slide for today. You can go and look at the other slides, slides yourself.
+We can build models therefore, which built into the mathematics of those models, there is
+the sensitivity of the atmosphere to the concentration of carbon dioxide. Okay. So then
+you can change the concentration of carbon dioxide. And that's how you create these,
+if you've heard of the IPCC, so the Intergovernmental Panel on Climate Change,
+what it does is it collates all of the climate science together. And one of the things that they
+do are climate projections. They're not predictions because we don't know how much fossil fuels we're
+going to be emitting in 2050. They're climate projections, they're guesses. And you use different
+scenarios. So this was from the cycle of IPCC models that ended in 2014. And you have a
+representative concentration pathway 8.5. It turns out those numbers are actually determined
+by changes in the amount of back radiation. So that 342, it comes down to this over here.
+Next one back. No, we are on that side. This back radiation, which is
+emitted by the surface and reradiated back, representative concentration pathways are
+estimates of how much greenhouse gas would produce an additional 8.5 watts per meter squared coming
+back or an additional 3.5 watts per meter squared coming back. So if you're wondering where those
+numbers come from, that's where they come from. So essentially, we emit very little greenhouse
+gas in the blue curve. And so that number goes from 342 plus 2.6 watts per meter squared coming
+back. And then we go all the way to this one, 8.5. So we burn all of the coal and all the
+fossil fuel that we possibly can, and we end up here. In reality, that's not going to happen.
+Like in reality, we are probably somewhere here, possibly. But that's what the average of all the
+models say. And this is where the biggest problem in climate science really is, is that you give all
+the models the exact same concentration of the way in which the concentration of carbon dioxide
+will change into the future, and then you run the models to see what global temperature they give
+you. This is the global temperature change. The red shading is the spread of the model's answers.
+So some models, you give them that concentration pathway of greenhouse gases,
+and they say that Earth by 2100 is going to be
+two and a half degree warmer. So yeah, this goes to 2100, this goes up here. So
+let's stick with 2100 because it's still our lifetimes.
+Other models will say, oh, if you emit that much greenhouse gas, the global mean temperature is
+going to be five degrees warmer. That range from two and a half to five degrees is the uncertainty.
+Even at this one for 2.6, you can see that there's an uncertainty from
+almost zero warming to almost two degrees warming. So these are the number of models
+that go into this. So these are 59 models. That's the uncertainty across those models.
+Those are 32 models. And that means that we don't know if we can emit a certain tonnage of
+carbon dioxide. We don't know how much warmer the planet's going to be.
+And trying to narrow that uncertainty has been the biggest challenge within climate
+science for a long time. And it comes down to the way that all of these processes of clouds,
+water vapor, feedback on each other. And it might also just be that it is a very uncertain system.
+That is too difficult to predict. But this is where we are at with climate science at the moment.
+And it means that if you live in a country where global warming is already making your country
+far hotter, you could believe this one. And you could say, we can't have Botswana getting this hot.
+We won't be able to grow any more, you know, farm cattle anymore. It'll be too hot. It'll
+just become Botswana becomes a desert. And then you might have another country that says, oh,
+it's okay. It's going to get warmer for us. It's already cold in our country.
+And so that's where the politics comes in and the ethics. And yeah, we just haven't been able to
+narrow this uncertainty for like, basically 40 years of climate science. So yeah.
+So those are based on different scenarios of carbon emission.
+Sorry?
+The fruits are based on different scenarios of carbon emission.
+Yes. So every time they, but the first thing they do with a IPCC cycle is they sit down and
+make guesses of how society and the globe might look. And then based on that, they make a guess
+of what the potential scenarios could be for emissions. They like storylines. They say,
+this is a world in which everyone's fighting. Everyone's trying to get all the oil they can
+and burn as much as they can. Well, this is a world in which everyone is cooperating.
+They are sharing technology, renewable energy. We're moving to a cleaner society.
+And they make up these different stories to guess what the future might look like for 100 years.
+So there's a question about, this will come into later in the week. But basically,
+can machine learning improve a lot of these model processes? And if it can improve the model
+processes and their representation, can we end up with better climate projections because we can
+have lower uncertainty? And we, I think, have almost a confirmed lecture on a model called
+Neural GCM, which is possibly one of the models that's the closest to being able to actually
+do this type of work in the future. And actually, there's two students in the class that are doing
+their projects. So they, from previous years cohort, so Malden being one and Lionel another,
+who are looking at whether you can use a thing that's tricky enough, the other lecture I
+developed for weather prediction of rainfall, whether you can use it to actually turn your
+GCM's rainfall into accurate forecasts for Kenya or East Africa. But you can catch them and ask
+them about the challenges and interesting things of that. Okay, I don't think I have anything else
+to say, but basically, climate is a thermodynamics problem. It's about the balance of energy.
+And when you talk about it being a boundary value problem,
+what do you think is the boundary for climate, which we are discussing in climate change?
+What is the boundary value that we set?
+You're all thinking the carbon dioxide concentration, right?
+The carbon dioxide concentration, that changes. We don't know what the world looks like with more
+carbon dioxide. We don't have that data. So for machine learning to directly solve it in a purely
+data driven approach, it's not really going to work. Okay.

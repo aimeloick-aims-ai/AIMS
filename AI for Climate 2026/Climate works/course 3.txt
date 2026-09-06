@@ -1,0 +1,680 @@
+It's going to see if it is possible.
+It might not be possible.
+It's going to see if it's possible to somehow draw with the pen.
+It's going to work.
+It is.
+Ah.
+This is good news.
+Okay, so the point of this lecture is about geophysical fluids.
+So it's about the way that yesterday was all about the thermodynamics of climate.
+Okay.
+So let's draw Earth's surface and we'll keep it one color fine.
+So Earth's surface looks, you know, something like that, it's a sphere, okay.
+And then above that is the atmosphere.
+And so pressure, we spoke about temperature and pressure in the observations lecture.
+We didn't really say why pressure was so important, okay.
+But pressure is a measure of how much atmosphere is above us, okay.
+So it's the same as saying if I was to lie on the ground and I don't know, as children
+maybe you did pylons where your friends all lie on top of you, who as children did that
+with part of our life?
+Yeah.
+So you lie on the ground.
+The pressure you feel as another child jumps on top of you gets greater and greater, okay.
+Now when we measure pressure in the atmosphere, it's the same thing.
+And it's about how much air is above us.
+So basically how much gas of air, oxygen 78%, oxygen 20% and all the other things.
+And that gives us essentially how much is pressing down on us at the surface.
+On average for most of the planets, it's about 1013 hectopascals.
+So pascal is the unit that we use for pressure.
+That means Newton meter squared, Newton meter, Newton per square meter, okay.
+Hecto is just saying one, is it 10 or is it 100?
+I think it's 10, yeah, 100, okay.
+So the surface pressure is going to be 1013 pascals, okay.
+We just call it hectopascals.
+The other thing that we use is something called millibars.
+So millibars, so a bar is another atmospheric, another pressure term, so like one bar.
+And millibars is a different way of calling it.
+And essentially one millibar equals one hectopascal, okay.
+So we would use them interchangeably as the vertical constant of height of the atmosphere.
+And so at the surface, you will be at 1000 millibars or hectopascals.
+At some point higher up, you're at 500 and as you get higher up, you're at 100.
+The tropopause is normally around 100 millibars, maybe 200 millibars.
+So that vertical line, okay.
+So you can then, rather than thinking about the vertical components of the atmosphere
+as being heights above the surface, it's useful to talk about it as pressure above the surface.
+Now this is maybe where we are in Cape Town at 34 degrees south.
+Given this understanding, at the equator, it's going to be, again, at the surface, about
+1000 hectopascals.
+Now Cape Town has a certain air temperature on average, and it gets cooler as you go up,
+okay.
+But in tropical Africa, tropical Amazon are the places it's warmer.
+So if I was to go up in the atmosphere, do you think that I'm going to reach 500 millibars
+at the same height as I am at Cape Town?
+Do I have to go higher or lower?
+Higher, yes.
+So 500 millibars here will be higher.
+And what about 100 millibars?
+Even higher, okay.
+And if we go to the poles, I won't ask you to do it because you get the idea.
+We don't have to go very high to reach 500 millibars or 100, okay.
+And so what we're saying is that that height is in the tropics about 14 kilometers, and
+over here it's maybe 7 kilometers, okay.
+We can draw a surface in the atmosphere, joining up all the 500 millibar points in
+the atmosphere, and that surface we will call a geopotential surface, okay.
+Now the geopotential surface is called the geopotential surface because it's the same
+altitude, which means that the air mass below it or above it is about the same.
+Well, you would think about it actually as the air pressing down at this level, okay.
+Which means that in terms of its mass, it's the same, but this air parcel is at possibly
+kilometers high, write that again, 7 kilometers, and this air parcel might be at 3 kilometers
+above the surface, okay.
+And that means that if you actually looked at this parcel, compared to that, it is a
+bit higher, okay.
+So geopotential, when we talk about a potential, it's about potential energy, which we will
+not break on electronic pen, but as you do the work of picking pens up from the floor,
+you have to use energy, okay.
+And by the time I've come up to this height, I've used a certain amount of energy, that
+is the potential energy of this.
+So if this drops, it loses the potential energy from the floor to here.
+This has more potential energy when it drops, okay, to this higher.
+And so there is an aspect of particles having different potential energy and therefore falling
+down, okay.
+So a geopotential surface is a surface of the same pressure.
+So pressure is the same, pressure is, yeah, whatever, it is equal everywhere along the
+surface, but we can define the geopotential in terms of the height, okay.
+And what that height gives us is the relative potential of air parcels.
+So from a perspective of mass, the amount of atmosphere here and there is the same,
+but from a geopotential perspective, this air parcel has more energy than that air parcel,
+which means that there is a gradient that this parcel actually would want to move downwards
+towards the equator, okay.
+So it can't, because there's other air in the way and the mass is in balance, but its
+potential, it can fall further than that, okay.
+I mean, there's some half-blank faces.
+Does it half make sense?
+Is there anyone that would like to ask a question to make, have this make more sense?
+Don't feel bad about if it makes no sense.
+If it makes no sense, can you please put your hands up?
+Yeah.
+You say that the surface here, how about the geophysical surface?
+Yes.
+And that's the reason why the energy, even the energy of the geopotential, if you put
+in the energy of the energy, it's not the same as the air.
+Yes.
+No sense.
+Yeah, I don't understand the other way.
+From the explanation, I thought the amount of, the mass of the air is the same.
+Yes.
+Here or there.
+So the potential energy of the geophysical surface, if the mass are the same, I think
+the potential energy is the same.
+The mass of these two planes is the same, but this plane is further from the surface.
+So the potential energy, the mass is the same, but the potential energy is different.
+If you and I weigh the same amount, and I stand on the floor and you stand on the table,
+you have, and by potential energy, it means it's like your potential, you know, we have
+human potential, and by you coming to Ames, you have more of an opportunity for your potential
+to be realized in the world.
+So the opportunity you have here is because you have, you know, smart minds, you're committed
+learners, you can do something good in the world, and, you know, there might be colleagues
+you have at home who have similar potential, but you manage to make it to Ames, it's an
+opportunity for your potential to be realized, okay?
+So potential energy is a much simpler thing.
+There is potential for both of these to fall, and they will pick up speed as they fall,
+but the thing with more potential energy has more potential to fall further and therefore
+faster, because it has all of this way to pick up speed, so gravity is pulling it down,
+so it has more potential.
+So we drop these, the green pen reached a faster velocity, it lost more energy as it
+And so the atmosphere, while the mass might be the same, the tropical atmosphere has more
+potential energy, and the atmosphere has this thing of, yes, we want to have all of the
+mass spread out, but ultimately we would actually also like to have the energy, the potential
+energy equivalence, okay?
+But, and if the sun turned off, this might help, if the sun turned off today, we're going
+to do it, dashed red line.
+So the sun turns off today.
+This atmosphere is going to go towards zero, to have the same potential energy everywhere.
+It doesn't want the gradient, and so what will happen is the geopotential surface will
+end up being like that, okay?
+So what will happen is that the air that is high will fall so that it ends up with the
+same potential energy as the air everywhere else, okay?
+If the sun turned off today, why, what would change?
+What would happen?
+What does the sun do to Earth that we learned yesterday?
+It warms it.
+And because of that thing that I had with the notebook up and down, where does the sun
+warm the most?
+The tropics.
+So the sun is warming the tropics most.
+It's making these tropical temperatures, so T tropics, greater.
+Because the sun keeps on making the tropical temperature greater, the geopotential of the
+tropics is continually being kept above the resting state of the atmosphere, okay?
+And the poles have a lower geopotential because this is where the energy is actually being
+lost.
+So it's cold, and more energy leaves the atmosphere from the poles than comes in, and so this
+is always cooling, and so it ends up with temperature of poles is, yeah, so we end up
+with T of poles is quite a lot less than, no, it's not quite a lot.
+That should be just probably one inequality than T of the tropics.
+Temperature of the poles for that atmosphere, I don't actually know what the average temperature
+for the atmosphere is, but if you start at the surface, it may be minus 20 or minus 30,
+and here we're looking at, you know, 30, okay, does that make sense?
+So actually, we've ended up getting into the energetics of the atmosphere, which is
+quite nice.
+If you add up, so you have a resting state of the atmosphere, which is the dotted line,
+but if you add up the energy of the atmosphere, for example, at the geopotential level of
+500, how much higher is this than the resting line?
+It will be in meters, so possibly we're looking at something like that resting state of the
+500 millibar geopotential might be, rather than being seven kilometers, as we said here,
+it might be only five and a half kilometers, okay?
+That means that we have a difference of 1.5 kilometers or 1,500 meters, okay, difference,
+for potential energy, you simply times that by gravity, so you times that by 9.8 meters per
+second, which is gravity, and you end up with a number, so let's say that's 10, we end up with
+a geopotential of 15,000 joules, okay, or as we would prefer to say, 15 kilojoules,
+yeah, yes, mass, so it's height, and then yes, it's mass, which in the atmosphere would
+use as density, so thank you, very good point, we've left out rho, which is the
+density of the atmosphere, good, okay, so we include that, fine, it's more than 15 kilojoules,
+but this is called available potential energy, A-P-E, available potential energy,
+and the available potential energy, what's the energy that happens
+when this is let go, what does the potential energy turn into, I know we have physicists in
+the room, kinetic energy, so kinetic is a word for movement, I'm not sure if it's a Greek or
+a Latin word, but kinetic means move, I'm full of kinetic energy, and there is a whole
+body of really nice mathematics, which is about how available potential energy is turned into
+is turned into kinetic energy, okay,
+we'll have a look at what that kinetic energy looks like, any questions at the moment about this,
+does that make sense?
+Yes.
+We will come to that in today's lecture, okay, I mean we started today's lecture from a slightly
+different angle, but I think it's an important angle, so thank you for your questions, because
+it's much more useful to actually start from here, who is not quite on the same page here,
+who would like to ask any final questions so that this is 90% clear in their minds?
+Yes.
+Henry, what is the relationship between the pressure and the time period?
+So, there's an equation called the ideal gas law, okay,
+an ideal gas law looks like this, it's PV equals nRT, it's a long time since I was doing my
+undergrad in this, the physicist, is that right, any part missing? Okay, so this is pressure, this is
+volume, R is an ideal gas constant, and there's some assumptions that go into an ideal gas,
+but for the atmosphere it's a very good approximation, and n, I think that's the molar,
+like how many gas molecules there are, and so the key point here is that pressure and volume
+are proportional to temperature, okay, and that means that
+if you have PV proportional to temperature, as temperature goes up,
+this side of the relationship, volume goes up while pressure comes down, okay, which means that
+for a given parcel of air, we have two syringes, we have two boxes that are, so we have a box,
+it has a certain number of gas molecules in it, the n part, this is a constant which is derived
+empirically, although it possibly can be derived from first principles, and we start to heat this
+on our fire, not a very good fire, but you get the idea,
+the temperature starts to rise, okay, and if the size of this cube can
+not expand, so it's a fixed cube, then all that's going to happen, because V is now held constant,
+the pressure continues to increase, okay, but if this is a balloon, so it can expand, as it gets
+warmer, the temperature, the volume will increase, okay, and so you can just get, for a warmer box,
+you have a greater volume of the box, okay, and so
+in the case of the atmosphere, the pressure is set by how much
+atmosphere is above pressing down, okay, so we can't really change the pressure so much,
+so we change the volume, so the equivalent parcel of air, when it is colder,
+it has a smaller volume than when it is warmer, and in terms of kinetics, that's where you get to
+statistical mechanics, what's happening is that the gas molecules here are gaining energy, so
+temperature is a gross measure of the average kinetic energy of all of the gas particles,
+and as the gas gets hotter, these little particles, we'll zoom in on one,
+here is a gas particle moving around within the cooler box, but here is the same gas particle,
+it's hotter, it has more kinetic energy, and it is now moving around
+within the bigger box, so for the same amount of time it has, it moves a greater space, and so
+basically what's happening is you have higher energy air, which means it takes up all space
+because they are moving more quickly and they're colliding into each other,
+so the physicists will know that, sorry if that was a repeat, but for those of you that
+haven't done physics, hopefully that's helpful, okay, I mean it's a pretty fundamental thing
+what I'm saying here, and you're like well hang on, why are you even saying that, okay,
+does that make enough sense, yeah, okay, so climate is about how warm the atmosphere gets,
+and that's firstly about the fact that the sun comes in and heats the surface,
+and it's secondly about the fact that the composition of the atmosphere means that
+it gets hotter and hotter, okay, so climate sets the space states, okay, and you know we saw the
+fact that it looked as though climate was, climate change in the observations even,
+and from those experiments was making a big warming blob over here, okay, that would in
+theory be increasing the potential temperature of the tropics, and so under global warming we expect
+the heights of the tropics, tropical atmosphere to actually rise a bit, and then possibly create
+more available potential energy, now whether that happens or not is very complicated because
+as soon as available potential energy exists the atmosphere is trying to get rid of it through
+kinetic energy, okay, so the atmosphere that states is not a stable state, if you turn off the sun
+the atmosphere wants to have equal potential energy everywhere, and so general circulation
+of the atmosphere, its whole thermodynamic job, what it's trying to do in terms of thermal energy
+is, now I'm going to carry on with the red pen, this picture is getting messy, is to move this
+temperature, the hotter air, towards the poles, okay, so there'll be a YouTube video I'll send around,
+you'll see that this is what's happening, it wants to move it to the poles, okay, now you're like well
+fine, just do the job, you just need to make the air go from there to there, if I want to get air
+out of my lungs I can blow it, and where does the air go, it goes in a straight line away from me,
+so why does the air not just go in a straight line from the Congo rainforest to the south
+pole, let's have a look, okay, any final questions before we carry on, yes,
+the gradient,
+so it's simply saying at the biggest scale,
+for air that is of the same pressure, 500 millibars, this has more potential energy
+because it is higher from the resting state, and it's higher from its surface than this air over here,
+this air over here,
+so another way to think of it,
+yes, guess we can raise up this table,
+a different way of thinking of it, so if I raise this table up here,
+this side of the table has more potential energy than that side, okay, now in the case of the table
+it's easy, you drop it down, it's going to reduce that potential energy, okay, but in the case of
+the atmosphere that potential energy is because the temperatures have increased it, which means
+that the air parcel that's at the equator has more potential energy than the air parcel at the
+pole and so it has the potential to fall to create kinetic energy, okay, so there is a
+gradient in the geo potential for the same amount of pressure or air mass above these and it wants
+to fall to reduce that potential, okay, and so one way it can do is by simply moving in the upper
+atmosphere and trying to fall, but the other way the atmosphere can try and do it is the potential
+only exists because this is so much warmer than that, and so it says well let's try and get rid
+of this heat and move it towards the poles because if we can move the heat we are going to be able to
+reach the reference state, the dotted line, when the whole atmosphere has the same geo potential
+and we don't need any movement, okay, but the sun keeps burning, every day the sun rises,
+it heats up everything and so we keep on building potential energy in the tropical atmosphere
+which then this residual part is the available potential energy, okay.
+Is everyone following some work here? Okay,
+so we're going to come back to the drawing in a moment.
+Wait, let me have a think, there might be a different way to do this.
+Yes, there is a slightly different way to do this.
+Okay, so what did we learn? That there's potential energy
+and this potential energy is related to gradients, okay.
+Oh, I can just click there. Oh, I found a much easier way to create everything,
+that's what called everything. If we look from the top down, okay,
+we can look at that geo potential surface again but now we're looking from the top down,
+okay, and if we look from the crater to the pole we are looking at the 500 millibar geo
+potential surface, okay, but I'm going to draw lines which are the geo potential meters, the height,
+okay, so if we start at the pole over here and I draw, oh, I thought I had it,
+uh, oh, hang on, oh, it did come,
+um, fine.
+Oh, the cursor was on that page, not on this page, right, I understand.
+Okay, what's the height of that geo potential line at the equator?
+At the equator? 14, yeah, okay, so that's 14,000.
+Okay, and what was it over here?
+Yeah, and so these lines in between
+are telling us that that might be
+8,000, it's not, it doesn't, it's not smooth but there's a big drop off at a certain point, 10,000,
+12,000, okay, that gives you a geo potential gradient, okay, so if you computed,
+and so what we normally term geo potential, the symbol we use is,
+the mathematicians, what do you call that correctly? I'd say five, but no, is that five?
+Five, yeah, okay, right, so now we actually, we actually more often draw it
+like straight up and down, okay, that's fine.
+The gradient of phi,
+okay, in this case, it's not a three-dimensional gradient, we are looking at that,
+so this just reduces to quite literally d phi over d, oh no, dy, okay, because we tend to
+call north to south in the atmosphere, why? Because if you think about a map,
+Africa, South America,
+Africa, North, East, we go
+y and x, okay, so we just have d phi dy is the geo potential gradient,
+yes, so that is the same as looking at the geo potential gradient, like, like this way down, okay.
+Bear with me here, because now we're going to talk about pressure.
+You can also reframe geo potential, which is now in the middle of the atmosphere,
+it's a very useful, 500 millibars is a very useful place to think about the weather,
+and I'll show you now why, but we couldn't measure the atmosphere before, we could often
+just measure the surface, okay, and at the surface, the only thing we could use is barometers to measure
+pressure in millibars or hectopascals, okay, and if you look at the surface then,
+you could also actually, it's not going to apply in this context,
+but you can have the gradient of pressure, not make it a row, just make it p, okay, and so
+you can across the planet have that, you're just looking in the horizontal, which we are, is
+the partial of p y plus p x, okay, and this is the pressure gradient, okay. Now,
+what's the pressure inside my cheeks now compared to us here?
+It's lower here, and in my cheeks, I've made high pressure,
+getting physical about the lecture. If we made that a one-dimensional system,
+we're just looking at this part, okay, it's not partial anymore, the dp dx,
+the dp dx,
+and what is happening to the air as it comes out? It's still,
+it's expanding, but if we describe its velocity, it's moving quickly.
+I mean, we can do it the other way around. The pressure gradient is driving the velocity of the
+air at the first instance, okay. We will somewhat interchangeably look at geopotential and pressure,
+okay. At the surface of the atmosphere,
+when we go back to this previous slide,
+okay, wait, first, is this clear before I move on to the next step? Does that make sense what
+I've described? Good, okay. At the surface of the atmosphere in this average state,
+what have I told you about the pressure?
+The mass, is the mass of air over the poles the same as the mass of air of the tropics?
+Yes, which means that the pressure at the surface of the tropical atmosphere p
+and the pressure at the poles, those are equivalent, so there is a temperature difference
+that approximately p at the poles is approximately equal to p
+at the tropics or the equator all the time, okay, which means that the surface
+there is not a gradient, okay, on average.
+But, as you go up in the atmosphere,
+because of the temperature difference, you end up with the geopotential gradient, okay.
+So, if we think about it in this context, at the surface, is there any pressure gradient
+to drive surface winds from the equator to the poles?
+At 500 millibars, is there a gradient to drive it? Yes.
+But, we are now talking geopotential gradients, not pressure gradients, okay.
+So, are you guys logged into your computers? Yeah.
+We'll come to it now, okay, when we're looking at the surface or when we're looking in the upper
+atmosphere. So, if we're at the surface, we will think about pressure gradient
+trying to drive the surface winds from the equator to the poles, okay.
+So, if we're at the surface, we will think about pressure gradient
+trying to drive wind flow, and if we're in the higher atmosphere, we would talk about
+geopotential gradient, yeah, okay. Right, are you guys logged into the computers?
+Then you log in and go to our website called windsy.com.
+For those of you that are interested, I've had a look and I don't know, it looks like Armagate,
+Ames, Ghana might have access, but there's this very lovely book,
+Atmospheric and Oceanic Dynamics by Jeffrey Ballas, and it has much of the more formal
+mathematical derivations of much of what we're discussing. So, I'm kind of giving you an
+informal and loose description of how things work so you get the understanding, but it's a really
+good book. If you can get hold of it, I don't know, do you have book grants here to buy
+books as well, or is that not part of your scholarships? No, okay. So, we'll see if there's
+a way to, I'll see if there's a way to get access so that we can see it, but there's some quite nice
+mathematics in there. It's all part of the differential equations, so if you did courses
+in that in your undergrad, you should in theory be capable, and if you've done physics, you know,
+physics is all about this type of mathematics. I mean, those of you that did physics, would you
+agree? Yeah, we are not talking about that though, we are talking about Windy.
+Okay, so if we look over here, we are looking at, oh, we're looking at waves, how interesting.
+That's not what I was meant to, let's look at pressure.
+So, this is an example of a pressure map, it's color shaded. So, red is higher pressure, okay,
+blue is lower pressure. So, if we think back to our change in pressure with
+x and y, you can see that there is a high pressure here, a low pressure here,
+and so there's actually quite a strong gradient between the pressure here and the pressure over
+there. So, this you would think would drive wind to move from here to there, but it doesn't.
+And that's because of the rotation of Earth, someone asked about that.
+And we see how we get on, we might need to leave the,
+maybe we can just cover rotation today, but let's see. If you now look on this side,
+and we change to just wind, you now have shading of the wind. But what I would like you to do,
+so there's a lot of different things here.
+What windy is, is this way of visualizing what's happening with the weather models.
+You can choose which model. So, ECMWF, European Center for Medium Range Weather Forecasting.
+This has its headquarters actually in Reading. So, my postdoc, I left my post, my PhD, finished
+in Cape Town, and I went to University of Reading to do a postdoc for three years,
+actually studying things called stinget windstorms. They've got a very good meteorology
+department, and ECMWF has been in Reading for a very long time. It's a European center. So,
+all of you that were good at mathematics, and you lived in Europe, and you liked weather,
+you may well have ended up trying to get a job here, because the European countries have agreed,
+we want the brightest people here. We want to make sure that they come from, even from the
+furthest parts of Europe. So, people are coming from all over the place, far away from Reading.
+Reading is a nice town, but it's quite flat. It's England, so the weather is not always great.
+To convince people to come, they don't pay tax, and very good salary, but the work they do is
+very good. This is probably the best weather forecast in the world. GFS is the global forecast
+system. It's the American system. For the longest time, we were using that because ECMWF was only
+available to European member states. They now have an open data policy, and so we are using that data
+more and more in African applications. The Americans, though, always gave the data away
+for free, but that may be changing as Trump finds out, oh, we're giving that data away. No, no, no.
+Shut you down. ICON is the German model. We might discuss, yeah, remind me to tell you about ICON.
+It's called ICON because it's got an icosahedral grid to solve the equations, and there's one more
+Rome REU, so this is the French model, and I'm not sure what the ROME stands for, but that's the
+French weather forecast model. What you can see is that wind speeds in this lower atmosphere
+are, in knots this case, about 20 knots at maximum. Now, I would like you to
+go to ... Where is it hiding?
+It's a place that ... Altitude. Here we go. Altitude. So let's go to that 500 millibar one
+we've been talking about.
+What you can see here, it's on average about 5.5 kilometers high, and actually, when it comes to
+airplanes, that's called flight level 180. So airplanes have different flight levels. This is
+flight level 180. We can go all the way to the top of the atmosphere.
+Airplanes would normally fly maybe around here, so flight level 390, 340, maybe 450, and if we go
+back to 500, we're going to have a little bit of a difference. So we're going to have a little bit
+340, maybe 450. And if we go back to 500,
+immediately, what do you see? At the surface, the wind speeds were 20 knots. Can someone read off
+based on that key at the bottom of the page on your screen? How many knots do we see for these winds?
+40 to 60. So the winds are much stronger. Why do you think that's happened?
+The biggest picture is that now we have a geopotential gradient.
+The effect of the fact that warmer air makes higher atmosphere means that at 500 millibars,
+that difference was a number we computed. But if you go back up another to 200 millibars or 100
+millibars, the geopotential difference is going to be greater because now there's that much
+more air that is warmer than the air at the poles. And so let's go up a bit higher.
+We're just going to zoom out here.
+And so you can see that there is a band across the globe, both in the North and the Southern
+Hemisphere, where the winds are incredibly strong, more than 60 knots. And if we ignore
+all of the waviness, you just see that there are very strong winds.
+Those strong winds are essentially the kinetic energy that is being extracted from the available
+potential energy of geopotential being so high here and geopotential being so much lower at
+the equator. So the gradient is driving very strong winds. But what's the problem here?
+If I blow out my mouth, the pressure is high here and it's lower here and the wind goes...
+Is that wind going like that?
+No. Any guesses? Does anyone... I mean,
+people might have done some of this work before. Any guesses? What's happening here?
+Maybe the rotation.
+The rotation. Exactly. So
+would you guys like to hear a bit about the rotation now?
+Or should we save that for tomorrow and we go into some practical work?
+We're a democracy in a slush. Who wants to save for tomorrow?
+I should be the dictator, but no.
+So it turns out that the Navier-Stokes equation is the equation that we can use
+to describe the fact that when there's pressure inside my mouth and there's low pressure outside,
+it makes strong wind. Okay? The Navier-Stokes equation, those of you that did the fluids
+course, in what context was the Navier... What did Richard Katz use the Navier-Stokes equation
+to help describe mathematically?
+Right. And what particular fluid did he look at?
+Biscuit fluids. Okay. What does that mean?
+It still means that we neglect the fluid, the viscosity of the fluid.
+Okay. So you neglect the viscosity. Okay. And what sort of processes did he show?
+Okay. So wind flow, things that maybe look like this. I'll talk a bit about this Millennium Prize
+stuff because there's some interesting side notes on that. But you can write up the equations,
+solve them numerically in a computer, and you can describe this type of flow. Okay? In this case,
+what you have is two different fluids of different colors. There's a density gradient
+between them, or some sort of gradient. Yeah, it's a density gradient. Okay? You can actually
+see these. These are called Kelvin-Helmholtz instabilities. When you have a cloud deck,
+which it's rare that you see it, but you can see this in nature. You have a low cloud deck,
+and then above that cloud deck is some very strong winds blowing.
+And essentially, you create these water seas and this happens. So is this the type of thing that
+you would have seen in Richard Katz's lecture? I mean, I know a lot of it was the mathematics.
+Okay. So the Navier-Stokes equation is also what is used to solve for wind flow over aeroplane
+wings. Okay. It's a very rich equation that can capture the behavior of fluid flows from the scale
+of how the fluid flows across my hand as I wave it in the room to the scale of motion that we
+were seeing on windy. Okay. And so I won't go through this. There are some annotated slides
+from when I did it last year, but it basically amounts to the fact that there is the pressure
+gradient. Okay. And the change in velocity of a fluid parcel or particle, it could be air,
+it could be water. So a change in time of that velocity is related to the pressure gradient.
+Okay. It's also related to the fluid that's around it. Okay. So if you have a fluid,
+this parcel has a certain amount of speed. It has a velocity. Its change in velocity
+is related to the pressure gradient. That's this term. Okay. It's also related to the density.
+So the pressure gradient acting on a less dense fluid could act more quickly and change the
+velocity more quickly than a more dense fluid. So if you apply a pressure gradient across air,
+its density is lower and therefore the response will be quicker. But if you apply it in water,
+water's density is like a thousand times that of air. And so you apply the pressure gradient,
+its response time will be slower. Okay. So that's what that controls for.
+This is the advection of the velocity. So the other way that the velocity at a given point can
+change is because there is very strong velocity here, but that velocity is being advected across
+to this point. So we are stuck in space. There's some very strong velocity here and the advection,
+which is this term here, can move it across. Okay. And this is because
+B in this case is representing three-dimensional flow. Okay. It's X, Y and Z. For the atmosphere,
+we normally approximate it as X and Y. Okay. So we just approximate velocity in the horizontal
+plane for a lot of the way we think about it, because the velocities in the vertical plane are
+very small. You then move into this. So this term here is normally used to refer to mu. So it's
+viscosity, how viscous the flow is. That will change the shear of the flow. Okay. And so we
+have a different operator here. It's not the gradient. Laplacian? Okay. So it's the
+gradient of the gradient. Okay. So that is often phrased.
+Oh, we still got a pen. So that I think is often can also be phrased like that. Yes. Yeah. Okay.
+So it's the gradient of the gradient. And then you can have other terms, other frictional terms
+and such. You can imagine that if you've got fluid across the table, there's a certain amount
+of friction that is going to slow it down. And so I think ultimately when I did this in the pipe
+context, if you think about a pipe, I'll do it very briefly, and you have pressure one,
+you have pressure two, could be my mouth. You have, this reduces to be just one-dimensional.
+So instead of v, we're talking about u. So it's just the x component of velocity. And
+we can then have the change of u with time is going to be, there's no evictions to talk of here.
+Is equal to one over rho, the change of p with x.
+Plus some, we can again talk about flows where we neglect viscosity. We have some frictional effect.
+Okay. And that is going to drive
+a flow like that. So the velocity du dt, the speed will increase. But then as you go to the walls,
+if you have viscosity, if you have friction, the velocity profile will look like this
+until you're at the wall. This would be called a no slip condition. So you would say that there is
+no slip at the boundary. Okay. And so that velocity profile would end up looking something like
+this. Okay. Which is what you see in a river. If you look at a river, the water flows much faster
+in the middle.
+So, okay. So I've said all of that. Pressure gradient force, friction, flow in a pipe. Okay.
+Okay. And this is where geophysical fluid dynamics is. So there's fluid dynamics
+and there's geophysical fluid dynamics. What's the big thing that's changed? Okay. We say we
+changed how this is formulated. We've taken this into a material derivative so that this has both
+the change in time and the eviction components. Okay. Anyone spot the difference here?
+This massive term over here. Well, we've lost our pen. Okay. It's about rotation. Earth is rotating.
+And that's what important is that this is a momentum equation. It is about how the speed
+of the particle changes and is related to the density. So momentum, if you've done physics,
+is about speed and mass. Okay. So we can both be running at the same speed, but I'm running next to
+a marathoner who is going to finish the marathon in two hours and I'm going to finish it in three
+and a half hours. My mass is much greater. And even if we're running at the same speed,
+my momentum is greater. Okay. And unless something changed comes to accelerate
+or change momentum, momentum remains conserved. Okay. And that's where this rotation part comes in.
+Because Earth is spinning, which means that an air parcel that's up at the top here
+Oh, my pen is back. Good. An air parcel that is at the top over here at the equator
+is spinning. Okay. That means that when we think about that air parcel, it both has the speed that
+it might be moving across the pole, but it also has rotation. And in this case, it's the rotation
+of Earth. Okay. Which is what this two omega is. Okay. So this is a radial, it's in radians per
+second. Okay. So it's how much Earth is rotating. And that means that because that is now angular
+momentum, so momentum that I have now is just standard momentum, but the momentum I have now
+is angular momentum. Okay. So if I am dancing, I have both a
+X component of momentum and I have an angular component of momentum. Okay. And we have to take
+that into account if we are going to stay true to the physics of the problem of maintaining
+conserving momentum. Everyone happy with assumptions and points that statements I've made so far? Okay.
+If you come down to the equator,
+and you imagine that you are on the equator, look at this person. I stayed in the same place.
+Did that particle have angular momentum or just you who was saying? Who was saying horizontal?
+Yeah. Yeah. Only horizontal. All right. What does that tell you? It tells you that the angular
+momentum of a particle or fluid on Earth is dependent on its latitude. Okay. So what we
+tend to do is we divide Earth into latitudinal belts like this. And those latitudinal belts
+are simply, oh, I can't draw straight. If we draw a line from
+if we draw a line from an angle from here to here. So that is obviously 90 degrees.
+The pole is at a latitude of 90 degrees. But if we go to here, I mean, I haven't drawn that very
+well. So yeah, that's where we're going to here. So that might be about 50 degrees latitude. It's
+simply referring to this angle over here. That's 30 degrees. We go up to here. That's 45 degrees
+latitude or so. Okay. And so what we need is a way to scale this angular momentum with latitude.
+And what comes up is what we end up calling the Coriolis effect or the Coriolis force.
+It isn't a force. It looks like a force when you see a parcel move, because it is affecting the
+U and V or the X and Y path of a parcel. But all it is is about responding to the angular momentum
+balance. Yes. What do you mean by parcels? A handful of air. Yeah, let's say like a handful
+of air. It could be a single air molecule, but let's just say it's a handful, for want of a
+better word. Okay. And so we end up with this equation where sine of that being 90 degrees.
+Okay. So we have the pole is going to end up that that is one and we end up with two omega.
+So two omega is, so omega is the rotation of Earth. Okay. And so within this equation,
+there's a reason it comes out as two. We can do the mathematics, but in order to have this in
+the equation, it's two omega. Okay. It's related to the fact that it's angular momentum rather than
+angular velocity. So that is the angular velocity of Earth, how fast it spins, but the angular
+momentum of Earth is two omega. Okay. So essentially, and so you can see that that's
+going to evaluate two omega at this. So what is omega? We'll work it out quickly.
+So what is a full rotation
+in radians? Two pi.
+Two pi. Okay. How long does it take for Earth to do a full rotation?
+24 hours. So we have 24 hours times by
+60 minutes in each hour times by 60 seconds in each hour.
+So, omega is equal to that value. Okay. It's how long it takes Earth to do a rotation.
+That's the angular speed. Okay. And so then you can work out f. So let's compute what this is
+going to be if this value was 45. Someone quickly get off their scientific calculator.
+Or do it in their head.
+So what we want to do is compute what's the value of f at 45 degrees?
+Zero point. Someone else have a?
+It's omega radians per second. Yeah.
+Sorry.
+Yes. Yes. Yes. Yes. Yes. Thank you. Sorry. Yes. It's how long it takes. So it's radians per second.
+Yes. Does someone have a number yet for us?
+My friend's in my office. I can't go and get my scientific calculator on it.
+Do we have a number?
+I'm looking for a number that ends up that f.
+I remember correctly is about 10 to the minus four.
+Anyone get close to that?
+So what is it?
+Okay.
+Yeah, it's on order that's fine if we have a five there.
+If we say it was a 10, it would be 10 times 10 to the minus four. So
+it's on order 10 to the minus four, 10 to the minus five. Okay.
+Yeah. Good. So this is what I was saying is that if you're up here, you have maximum angular
+momentum as a parcel of air. But if you're over here, you have less and by the time you get to
+here is zero. Okay. And that angular momentum must be conserved. Yes.
+So because it's radians per second, it is defined. That's a very important point.
+It's defined. What we do is we treat it on the XY plane. So the vector is always
+out of the XY plane. So it's orthogonal to Earth's surface. Okay. So because what we are going to do
+is mostly look at the equations in the XY plane, because we are looking at fluid flow across Earth
+and Earth is essentially two dimensional. I mean, there's vertical height,
+but if you were to take Earth's atmosphere and look at it, it's as thin as the skin on an apple.
+Okay. So the atmosphere is actually very thin. The vertical dimension is much smaller than the
+horizontal dimension. And so this is, you know, at the equator, we are considering
+orthogonal to that surface. What is that rotation? And it is this point zero, but over here we are
+saying what is the rotation orthogonal to that surface? Okay. Now there is an element of,
+there is a component of this, which is also in the vertical direction, that is not in that
+direction. So there is a, the true component is here, right? I guess this is the point,
+is that that true component is actually in this direction. Okay. And so it's made up of
+two different components. And what we do is we look at
+only this component, which then is, no, we forget that one. I've got the angles the wrong way around
+here. We neglect the one component to only have the one which is the horizontal component.
+So we're only thinking about the way in which air is spinning relative to the Earth's surface,
+not how air is spinning within the atmosphere. Okay.
+And so that's how it comes formally in the equation. If we go back to
+this, yeah.
+It doesn't look like, which component should we use? I think we have access.
+You have, you find access. Oh, cool, good. I'm not sure which chapter it might be,
+chapter two. Oh my gosh, you've got access. Excellent. Very good. So it could be
+Equations of Effective Rotation and Satisfaction by chapter two, yeah. Oh, I'm glad I remembered.
+Okay. Now, it's not that important to actually see that derivation. I mean, if it's interesting to
+you, absolutely do. And another very simple way of thinking about it, which is not going to make
+sense from the mathematics, okay, it's not going to make sense in that way. But it's thinking about
+that pattern that we saw for windy, okay, is if you think about how big Earth's radius is at this
+point, okay, versus Earth's radius at this point, okay, and you think about the air parcel is moving
+around Earth, okay, this parcel's momentum is its speed on Earth's surface spinning times this radius,
+okay. This parcel might be moving at the same speed. So this is now looking at North Africa.
+This is looking in Congo, okay. They're moving at the same speed, but this radius is larger,
+okay, which means that the angular momentum of this particle that is stationary at its surface
+is larger than that one's, okay. So if you think about the angular momentum of this particle,
+okay, so what is going to happen if this particle moves over here?
+It becomes faster because of the momentum. Okay.
+Geopotential is taking air parcels from the equator where they have a lot of angular momentum,
+and it is moving them further south. And so in the simplest sense, it is only half correct.
+But in the simplest sense, simply because of angular momentum,
+this particle has an angular momentum given by the radius to the axis of rotation
+and its speed, okay, u.
+This parcel, not in the strong wind, but a parcel that is here that is stationary,
+r is u. This u, they're making them equivalents between these two, okay. So the speed at which
+they go around Earth, they're staying in the same place. If you move this particle here,
+because this radius is much bigger, its angular momentum is much larger, which means this parcel
+is going to go faster than this parcel, okay. So in the very simplest effect, rotation,
+we have to conserve angular momentum because Earth is rotating, and that means that every time
+you move a parcel more for south, it is going to be faster if you move it towards the pole.
+Similarly, if you go from the pole, now this is even closer to the axis of rotation,
+and so that parcel is going to be slower than the area it encounters here,
+and it's going to end up having that type of direction, okay. And so that is why, even though
+the geopotential
+radiance is large from here to here,
+air never follows that. Because Earth is spinning so quickly, air ends up going east to west. Yes.
+Where is the direction of it?
+For the same reason that the R over here, this is now much smaller. So
+come on, come back to me, where are you?
+It was, yeah, does that think that the Earth is like this? And so it's about R, R1,
+R2, and R is small. I get that the difference in radius can cause this like,
+but why are they in opposite directions? Because in this case, it's R3 is small, which means its
+angular momentum is the smallest, which means in order to conserve angular momentum, as it encounters,
+as it moves across Earth's surface to a larger, so the thing about angular momentum conservation,
+is that this value, R times U, has to stay constant. So this is equal, this is staying
+constant, okay. And that means that as R is increasing, in this case, U has to decrease
+in order for that to stay constant. And so that means that, relatively speaking, to this particle,
+as this R of this air parcel is coming from here, is approaching R2, which is this parcel,
+its U is going to end up much lower than this U. And therefore this one carries on going ahead,
+and this one, relatively speaking. Yeah, yeah, okay.
+I'd like to stop there for today. Yeah, final question.
+Why does the wind always go eastwards when moving from the equator?
+Because of this, because at the equator, R is the greatest, so R, R1 at the equator,
+is greater. And therefore, as it moves down, and again, it needs to be constant,
+in this case, the R is decreasing. And the way to balance a reduction of the
+radius that the air parcel is rotating on, is to increase the speed in order for
+the angular momentum of that parcel to stay the same. And so if its speed increases,
+the parcel is going to be, relatively speaking, accelerating compared to the parcel that was
+already there. But why accelerating to the east? Why not the west? Because Earth rotates,
+but it's because of the direction Earth rotates. If you made Earth rotate the other way around,
+and so actually they do this as, you know, one of the ways to check if your
+model has good physics, and they're doing this with the machine learning models,
+is to say, well, the neural net that has learned how to represent this animation,
+does it just know that because it knows that air must go east to west, and it's faster over here
+than over there? Has it actually learned the physics properly? You know, is that now encoded
+in the neural net's knowledge in its latent space? And so then you say, ah, okay, let's make Earth
+rotate the other way. If it has worked properly, then the neural nets should be able to simulate
+an atmosphere in which the gestures go the other way. Of course, you need to then have a neural
+net where you can have the rotation rates as external to what it's learning, but, and that's
+not a trivial thing, okay. Good. So we're going to leave it there for today. Tomorrow we are going
+to go, oh, sorry, this part was not on the camera. Didn't keep track of moving my camera around.
+Here we go, here is this.
+I'm not sure what's happening with the talking here,
+but tomorrow we're going to look at a scale analysis of the Navier-Stokes equation
+in order to see how this Navier-Stokes equation, if we specifically filter it
+for the length scales and the speed scales that our observations have told us,
+we can end up with a simplified equation set, which is a very good approximation to what we
+see in the actual atmosphere, okay. So, I don't know, have any of you done scaling analysis?
+I mean, if you've done physics, I'm sure you have, but have you done scaling analysis on
+equations before? Yes, okay, I'm seeing heads and nodding, but like, yeah, so hands up, who has done
+a scaling analysis before? Okay, so there's some hands. So essentially we will do a scaling
+analysis to filter the Navier-Stokes equation to see how within the behavior that that equation
+describes is both its ability to describe flow in a pipe, flow over a wing, but in this context,
+at these spatial scales, with rotation, Navier-Stokes can actually give us a
+incredibly powerful description of what's happening in the atmosphere. And this comes to the point
+that the Navier-Stokes equation, the very rich equation, and within the things that it can tell
+us about is basically all of this behavior, okay. So, let's leave it there. I keep on having less
+slides and trying to put less in the lecture, and then we still don't have enough time for practicals.
+So, I sent the email yesterday,
+uh, can everyone please stand up? We've had a lot of time sitting.
+Good, um, can you all, those of you, sit down if you saw my email yesterday and you managed to get
+to the final points. So, you finished what I suggested was homework for yesterday.
+Okay, so you got to the end of, I think I asked you to say, where in the world are these
+indices being plotted? Okay, good. Okay, so it's about half of you. Okay, so that's fine,
+it's good to know that we haven't all got to that part yet. Okay, everyone can sit down.
+Next question is, so you had some groups yesterday,
+and hands up if basically none of your group members are here anymore.
+Oh, okay, that's, it's less than half of you. Okay, so maybe those of you that were in your
+groups yesterday, if your group is still here, then that's good. Can you go and sit with your
+group, please? And then those of you that do not have your group members, can you either join
+others that have a group or form your own groups? Again, maximum is four, but we basically want
+groups of three. Okay, so those of you that have your group members, can you please go sit with
+them today? Get your notebooks open.
